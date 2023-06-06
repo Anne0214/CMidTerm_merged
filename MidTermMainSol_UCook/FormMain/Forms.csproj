@@ -63,20 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheckInput.cs" />
-    <Compile Include="EF Models_category\CATEGORY_食譜分類_LEVEL_ONE.cs" />
-    <Compile Include="EF Models_category\CATEGORY_食譜分類_LEVEL_ONE_TMP.cs" />
-    <Compile Include="EF Models_category\CATEGORY_食譜分類_LEVEL_THREE.cs" />
-    <Compile Include="EF Models_category\CATEGORY_食譜分類_LEVEL_THREE_TMP.cs" />
-    <Compile Include="EF Models_category\CATEGORY_食譜分類_LEVEL_TWO.cs" />
-    <Compile Include="EF Models_category\CATEGORY_食譜分類_LEVEL_TWO_TMP.cs" />
-    <Compile Include="EF Models_category\Model1.Context.cs" />
-    <Compile Include="EF Models_category\Model1.cs" />
-    <Compile Include="EF Models_category\Model1.designer.cs">
-      <DependentUpon>Model1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EF Models_category\RECIPE_食譜.cs" />
-    <Compile Include="EF Models_category\RECIPE_食譜_TMP.cs" />
-    <Compile Include="EF Models_category\RECIPE_食譜_TMPTest.cs" />
     <Compile Include="EF Models_recipe\AppDbContext.cs" />
     <Compile Include="EF Models_recipe\CATEGORY_食譜分類_LEVEL_ONE.cs" />
     <Compile Include="EF Models_recipe\CATEGORY_食譜分類_LEVEL_THREE.cs" />
@@ -296,11 +282,6 @@
     <Compile Include="UserControls\Toast.designer.cs">
       <DependentUpon>Toast.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\MarketingVM.cs" />
-    <Compile Include="ViewModels\OrderVM.cs" />
-    <Compile Include="ViewModels\ProductDetailVM.cs" />
-    <Compile Include="ViewModels\ProductSearchVM.cs" />
-    <Compile Include="ViewModels\SkuVM.cs" />
     <EmbeddedResource Include="FormCategoryAddLevel123PK.resx">
       <DependentUpon>FormCategoryAddLevel123PK.cs</DependentUpon>
     </EmbeddedResource>

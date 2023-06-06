@@ -10,6 +10,5 @@ namespace FormMain
     {
         void Success(string message);
 
-        void Display();
     }
 }

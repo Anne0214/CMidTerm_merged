@@ -25,7 +25,25 @@ namespace FormMain
 			dataGridView1.RowsAdded += DataGridView1_RowsAdded;
 			dataGridView1.RowsAdded += DataGridView1_RowsAdded;
 
-		}
+            //dateTimePicker空值
+            dateTimePickerStart.Format = DateTimePickerFormat.Custom;
+            dateTimePickerStart.CustomFormat = " ";
+			dateTimePickerStart.ValueChanged += EnableDateTimePickerStart;
+            dateTimePickerEnd.Format = DateTimePickerFormat.Custom;
+            dateTimePickerEnd.CustomFormat = " ";
+			dateTimePickerEnd.ValueChanged += EnableDateTimePickerEnd;
+
+        }
+
+        private void EnableDateTimePickerEnd(object sender, EventArgs e)
+        {
+            dateTimePickerEnd.CustomFormat = "yyyy-MM-dd";
+        }
+
+        private void EnableDateTimePickerStart(object sender, EventArgs e)
+        {
+            dateTimePickerStart.CustomFormat = "yyyy-MM-dd";
+        }
 
         public void Display()
         {
@@ -33,12 +51,7 @@ namespace FormMain
 			string authorName = textBoxAuthorName.Text;
 			string authorPk = textBoxAuthorPk.Text;
 			string recipeName = textBoxRecipeName.Text;
-
-			int recipePK = 0;
-			if (int.TryParse(textBoxRecipePk.Text, out int num))
-			{
-				recipePK = num;
-			}
+			string recipePk = textBoxRecipePk.Text;
 
 
 			DateTime start = dateTimePickerStart.Value;
@@ -62,36 +75,36 @@ namespace FormMain
 
 			if (!string.IsNullOrEmpty(authorName))
 			{
-				result.Where(x => x.NickName.Contains(authorName));
+				result = result.Where(x => x.NickName.Contains(authorName));
             }
 
 			if (!string.IsNullOrEmpty(authorPk))
 			{
-				result.Where(x => x.AuthorPK.Contains(authorPk));
+				result = result.Where(x => x.AuthorPK.Contains(authorPk));
 			}
 
 			if (!string.IsNullOrEmpty(recipeName))
 			{
-                result.Where(x => x.RecipeName.Contains(recipeName));
+                result = result.Where(x => x.RecipeName.Contains(recipeName));
+				
 			}
 
-			if (recipePK != 0)
+			if (!string.IsNullOrEmpty(recipePk))
 			{
-                result.Where(x => x.RecipePk.Equals(recipePK));
+                result = result.Where(x => x.RecipePk.Contains(recipePk));
+            }
+			if (dateTimePickerStart.CustomFormat != " ")
+			{
+				result = result.Where(x => x.PublishedTime > start);
 			}
-			//if (start != null)
-			//{
-			//             result.Where(x => x.PublishedTime > start);
-			//}
-			//if (end != null)
-			//{
-			//             result.Where(x => x.PublishedTime < end);
-			//}
+			if (dateTimePickerEnd.CustomFormat != " ")
+			{
+				result = result.Where(x => x.PublishedTime < end);
+			}
 
 			//最後整理
-			
+
 			dataGridView1.DataSource = result.ToList();
-            dataGridView1.Update();
 
         }
 
@@ -115,9 +128,13 @@ namespace FormMain
 			textBoxAuthorPk.Text= String.Empty;
 			textBoxRecipeName.Text= String.Empty;
 			textBoxRecipePk.Text = String.Empty;
-			dateTimePickerStart.Value = DateTime.Now;
+            //dateTimePicker空值
+            dateTimePickerStart.Format = DateTimePickerFormat.Custom;
+            dateTimePickerStart.CustomFormat = " ";
+            dateTimePickerEnd.Format = DateTimePickerFormat.Custom;
+            dateTimePickerEnd.CustomFormat = " ";
 
-			Display();
+            Display();
         }
 
 

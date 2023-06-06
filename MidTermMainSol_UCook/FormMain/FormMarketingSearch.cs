@@ -1,4 +1,4 @@
-﻿using FormMain.ViewModels;
+﻿
 using ISpan2023.UCook.BackEnd;
 using ISpan2023.UCook.BackEnd.Dtos;
 using ISpan2023.UCook.BackEnd.Repositories;
@@ -20,6 +20,7 @@ namespace FormMain
     {
         List<MarketingDto> data;
         List<MarketingDetailDto> datas;
+        private int selectedTab { get; set; }
 
         public FormMarketingSearch()
         {
@@ -96,7 +97,6 @@ namespace FormMain
         private void FormSearch_Load(object sender, EventArgs e)
         {
             Display();
-
         }
 
 
@@ -127,19 +127,26 @@ namespace FormMain
                 switch (marketingId)
                 {
                     case "首頁A-1":
-                        selectedPageIndex = 0; break;
+                        selectedPageIndex = 0; 
+                        break;
                     case "首頁A-2":
-                        selectedPageIndex = 1; break;
+                        selectedPageIndex = 1; 
+                        break;
                     case "首頁A-3":
-                        selectedPageIndex = 2; break;
+                        selectedPageIndex = 2; 
+                        break;
                     case "搜尋結果頁B-1":
-                        selectedPageIndex = 3; break;
+                        selectedPageIndex = 3; 
+                        break;
                     case "搜尋結果頁B-2":
-                        selectedPageIndex = 4; break;
+                        selectedPageIndex = 4; 
+                        break;
                     case "搜尋結果頁B-3":
-                        selectedPageIndex = 5; break;
+                        selectedPageIndex = 5; 
+                        break;
                     case "個人頁C":
-                        selectedPageIndex = 6; break;
+                        selectedPageIndex = 6; 
+                        break;
                 }
 
                 FormMarketingEdit frm = new FormMarketingEdit(marketingId, selectedPageIndex);
@@ -152,24 +159,7 @@ namespace FormMain
                 frm.Owner = this;
                 frm.ShowDialog();
 
-                //switch (selectedPageIndex)
-                //{
-                //    case 1: //"首頁A-1"
-                //        Display(pageId: 1); // 更新搜索分頁為分頁1
-                //        break;
-                //    case 2:
-                //        Display(pageId: 2); break;
-                //    case 3:
-                //        Display(pageId: 3); break;
-                //    case 4:
-                //        Display(pageId: 4); break;
-                //    case 5:
-                //        Display(pageId: 5); break;
-                //    case 6:
-                //        Display(pageId: 6); break;
-                //    case 7:
-                //        Display(pageId: 7); break;
-                //}
+
             }
         }
 
@@ -220,10 +210,7 @@ namespace FormMain
 			Display(); //用來刷新表格資料
 		}
 
-		public void Display()
-		{
-            return;
-		}
-	}
+
+    }
     
 }

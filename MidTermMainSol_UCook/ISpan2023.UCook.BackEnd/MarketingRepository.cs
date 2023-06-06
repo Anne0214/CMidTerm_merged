@@ -151,7 +151,7 @@ WHERE [CAMPAIGN活動_PK] = @CAMPAIGN活動_PK ";
 
         }
 
-        public int Create(MarketingDetailDto dto)
+        public void Create(MarketingDetailDto dto)
         {
             string sql = @"INSERT INTO [CAMPAIGN_廣告活動]
 (CAMPAIGN活動_PK,AD_SPACE廣告版面_PK,CAMPAIGN_NAME活動名稱
@@ -169,8 +169,19 @@ VALUES
                     .AddDateTime("@END_TIME結束時間", dto.END_TIME結束時間)
                     .AddNVarchar("@AD_IMG廣告圖", 5000, dto.AD_IMG廣告圖)
                     .Build();
-
-            return SqlDb.Create(SqlDb.GetConnection, sql, parameters);
+            using(SqlConnection sqlConnection = SqlDb.GetConnection())
+            {
+                sqlConnection.Open();
+                using(SqlCommand sqlCommand = sqlConnection.CreateCommand())
+                {
+                    sqlCommand.CommandText = sql;
+                    if (parameters.Length != 0)
+                    {
+                        sqlCommand.Parameters.AddRange(parameters);
+                        sqlCommand.ExecuteNonQuery();
+                    }
+                }
+            }
         }
     }
 }

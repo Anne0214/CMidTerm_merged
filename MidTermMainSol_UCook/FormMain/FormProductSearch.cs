@@ -22,11 +22,22 @@ namespace FormMain
 			InitializeComponent();
 			this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(230)))));
-            dataGridView1.BackgroundColor = Color.FromArgb(255, 255, 253); //背景色
-			dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(237, 243, 255); //雙行色
 
+
+            dataGridView1.BackgroundColor = Color.FromArgb(255, 255, 253); //背景色
+            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(237, 243, 255); //雙行色
 			dataGridView1.RowsAdded += DataGridView1_RowsAdded;
 			dataGridView1.RowsAdded += DataGridView1_RowsAdded;
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DefaultCellStyle.Font = new Font("微軟正黑體", 12F);
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("微軟正黑體", 12F);
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridView1.GridColor = Color.FromArgb(255, 255, 253);
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.Columns[0].DefaultCellStyle.BackColor = Color.FromArgb(255, 255, 253);
 
             string[] targets = new string[] { "SKU", "商品名稱", "SPU" };
             comboBoxTarget.Items.AddRange(targets);

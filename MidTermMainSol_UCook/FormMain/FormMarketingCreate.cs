@@ -1,4 +1,4 @@
-﻿using FormMain.ViewModels;
+﻿
 using ISpan2023.UCook.BackEnd.Dtos;
 using ISpan2023.UCook.BackEnd.Repositories;
 using System;
@@ -144,7 +144,7 @@ namespace FormMain
             }
         }
 
-       
+
         private string CoverFilePath { get; set; }
         private void buttonUpload_Click(object sender, EventArgs e)
         {
@@ -198,129 +198,50 @@ namespace FormMain
             }
 
 
-            try
+            //try
+            //{
+            //precondition checks, 檢查各欄位值是否有填寫正確
+            //panel有紅框就不給過
+            if (panel1.BackColor == Color.Red)
+            { return; }
+            if (panel4.BackColor == Color.Red)
+            { return; }
+            if (panel2.BackColor == Color.Red)
+            { return; }
+
+            var imgSave = new ImageUpload();
+            CoverFilePath = string.IsNullOrEmpty(CoverFilePath) ?
+                                CoverFilePath : imgSave.SaveImage(CoverFilePath);
+
+
+
+            //蒐集表單欄位值到dto
+            MarketingDetailDto dto = new MarketingDetailDto()
             {
-                //precondition checks, 檢查各欄位值是否有填寫正確
-                //panel有紅框就不給過
-                if (panel1.BackColor == Color.Red)
-                { return; }
-                if (panel4.BackColor == Color.Red)
-                { return; }
-                if (panel2.BackColor == Color.Red)
-                { return; }
-
-
-                //蒐集表單欄位值到dto
-                MarketingDetailDto dto = new MarketingDetailDto()
-                {
-                    CAMPAIGN活動_PK = labelPK.Text,
-                    AD_SPACE廣告版面_PK = comboBox1.SelectedIndex,
-                    CAMPAIGN_NAME活動名稱 = textBoxTitle.Text,
-                    URL連結 = textBoxURL.Text,
-                    START_TIME開始時間 = dateTimePickerStart.Value,
-                    END_TIME結束時間 = dateTimePickerEnd.Value,
-                    AD_IMG廣告圖 = textBoxUpload.Text,
-                };
-
-
-                if (comboBox1.SelectedItem != null)
-                {
-                    string selectedValue = comboBox1.SelectedItem.ToString();
-                    //int selectedIndex = comboBox1.SelectedIndex;
-                    //if (selectedIndex >= 0 && selectedIndex < comboBox1.Items.Count)
-                    //{
-                    //    // Map the selected index to the corresponding value
-                    //    int selectedValue = selectedIndex + 1; // Add 1 to match your expected values
-
-                    //    // Assign the selected value to the dto.AD_SPACE廣告版面_PK property
-                    //    dto.AD_SPACE廣告版面_PK = selectedValue;
-                    //}
-
-                    //if (int.TryParse(selectedValue, out int parsedValue))
-                    //{
-                    //    dto.AD_SPACE廣告版面_PK = parsedValue;
-                    //}
-                    if (!string.IsNullOrEmpty(selectedValue))
-                    {
-                        dto.AD_SPACE廣告版面_PK = int.Parse(selectedValue);
-                    }
-                    //                    Dictionary<string, int> options = new Dictionary<string, int>()
-                    //{
-                    //    { "首頁A-1", 1 },
-                    //    { "首頁A-2", 2 },
-                    //    { "首頁A-3", 3 },
-                    //    { "搜尋結果頁B-1", 4 },
-                    //    { "搜尋結果頁B-2", 5 },
-                    //    { "搜尋結果頁B-3", 6 },
-                    //    { "個人頁C", 7 },
-                    //    // Add other options to the dictionary
-                    //};
-
-                    //                    if (options.ContainsKey(selectedValue))
-                    //                    {
-                    //                        dto.AD_SPACE廣告版面_PK = options[selectedValue];
-                    //                    }
-                    //                    else
-                    //                    {
-                    //                        // Handle the case when the selected value doesn't match any known options
-                    //                    }
-                    //                }
-
-                    //switch (selectedValue)
-                    //{
-
-                    //    case "首頁A-1":
-                    //        dto.AD_SPACE廣告版面_PK = 1;
-                    //        break;
-
-                    //    case "首頁A-2":
-                    //        dto.AD_SPACE廣告版面_PK = 2;
-                    //        break;
-
-                    //    case "首頁A-3":
-                    //        dto.AD_SPACE廣告版面_PK = 3;
-                    //        break;
-
-                    //    case "搜尋結果頁B-1":
-                    //        dto.AD_SPACE廣告版面_PK = 4;
-                    //        break;
-
-                    //    case "搜尋結果頁B-2":
-                    //        dto.AD_SPACE廣告版面_PK = 5;
-                    //        break;
-
-                    //    case "搜尋結果頁B-3":
-                    //        dto.AD_SPACE廣告版面_PK = 6;
-                    //        break;
-
-                    //    case "個人頁C":
-                    //        dto.AD_SPACE廣告版面_PK = 7;
-                    //        break;
-                    //    default:
-                    //        // 非预期的选定项文本值
-                    //        dto.AD_SPACE廣告版面_PK = 0; // 默认值或错误处理
-                    //        break;
-
-                    //}
-
-                    var imgSave = new ImageUpload();
-                    CoverFilePath = string.IsNullOrEmpty(CoverFilePath) ?
-                                        CoverFilePath : imgSave.SaveImage(CoverFilePath);
+                CAMPAIGN活動_PK = labelPK.Text,
+                AD_SPACE廣告版面_PK = comboBox1.SelectedIndex + 1,
+                CAMPAIGN_NAME活動名稱 = textBoxTitle.Text,
+                URL連結 = textBoxURL.Text,
+                START_TIME開始時間 = dateTimePickerStart.Value,
+                END_TIME結束時間 = dateTimePickerEnd.Value,
+                AD_IMG廣告圖 = CoverFilePath,
+            };
 
 
 
-                    //呼叫新增的方法
-                    var repo = new MarketingRepository();
-                    int newId = repo.Create(dto);
-                    MessageBox.Show($"新增成功! 新的活動編號是:{newId}");
-                }
-            }
 
-            catch (Exception ex)
-            {  //儲存失敗的狀況
-                MessageBox.Show("儲存失敗，失敗原因是: " + ex.Message);
-                return;
-            }
+            
+
+
+
+            //呼叫新增的方法
+            var repo = new MarketingRepository();
+            repo.Create(dto);
+            //catch (exception ex)
+            //{  //儲存失敗的狀況
+            //    messagebox.show("儲存失敗，失敗原因是: " + ex.message);
+            //    return;
+            //}
 
             //通知(儲存成功的狀況)
             INotify frm = this.Owner as INotify;
@@ -328,7 +249,11 @@ namespace FormMain
 
             //關閉本視窗
             this.Close();
+
         }
+
+
     }
 }
+
  

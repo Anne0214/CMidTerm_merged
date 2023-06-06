@@ -104,9 +104,8 @@ namespace FormMain
             int rows = repo.Update(_pk, _nickname, _self_info, _rpn, _rpa, _rpp, _profile_photo);
             if (rows > 0)
             {
-                MessageBox.Show("更新成功!");
                 INotify parent = this.Owner as INotify;
-                parent.Display();
+                parent.Success("更新成功");
                 this.Close();
             }
             else
