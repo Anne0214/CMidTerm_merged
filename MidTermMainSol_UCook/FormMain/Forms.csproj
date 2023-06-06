@@ -63,14 +63,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheckInput.cs" />
-    <Compile Include="EF Models\AppDbContext.cs" />
-    <Compile Include="EF Models\CATEGORY_食譜分類_LEVEL_ONE.cs" />
-    <Compile Include="EF Models\CATEGORY_食譜分類_LEVEL_THREE.cs" />
-    <Compile Include="EF Models\CATEGORY_食譜分類_LEVEL_TWO.cs" />
-    <Compile Include="EF Models\FOOD_食材.cs" />
-    <Compile Include="EF Models\MEMBER_會員.cs" />
-    <Compile Include="EF Models\RECIPE_食譜.cs" />
-    <Compile Include="EF Models\STEP_步驟列表.cs" />
+    <Compile Include="EF Models_recipe\AppDbContext.cs" />
+    <Compile Include="EF Models_recipe\CATEGORY_食譜分類_LEVEL_ONE.cs" />
+    <Compile Include="EF Models_recipe\CATEGORY_食譜分類_LEVEL_THREE.cs" />
+    <Compile Include="EF Models_recipe\CATEGORY_食譜分類_LEVEL_TWO.cs" />
+    <Compile Include="EF Models_recipe\FOOD_食材.cs" />
+    <Compile Include="EF Models_recipe\MEMBER_會員.cs" />
+    <Compile Include="EF Models_recipe\RECIPE_食譜.cs" />
+    <Compile Include="EF Models_recipe\STEP_步驟列表.cs" />
     <Compile Include="FormMarketingCreate.cs">
       <SubType>Form</SubType>
     </Compile>
