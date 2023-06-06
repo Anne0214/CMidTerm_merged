@@ -60,7 +60,7 @@
 			this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 			this.buttonCancel.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonCancel.ForeColor = System.Drawing.Color.Black;
-			this.buttonCancel.Location = new System.Drawing.Point(262, 193);
+			this.buttonCancel.Location = new System.Drawing.Point(263, 208);
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(105, 31);
 			this.buttonCancel.TabIndex = 10;
@@ -73,7 +73,7 @@
 			this.buttonConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(116)))), ((int)(((byte)(198)))));
 			this.buttonConfirm.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-			this.buttonConfirm.Location = new System.Drawing.Point(388, 193);
+			this.buttonConfirm.Location = new System.Drawing.Point(389, 208);
 			this.buttonConfirm.Name = "buttonConfirm";
 			this.buttonConfirm.Size = new System.Drawing.Size(105, 31);
 			this.buttonConfirm.TabIndex = 9;

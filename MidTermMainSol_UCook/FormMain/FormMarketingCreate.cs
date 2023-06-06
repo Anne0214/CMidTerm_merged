@@ -33,7 +33,6 @@ namespace FormMain
             textBoxUpload.Validating += textBoxUpload_Validating;
 
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(213)))), ((int)(((byte)(230)))));
             //combobox選項
             string[] options =
                 { "首頁A-1", "首頁A-2", "首頁A-3", "搜尋結果頁B-1", "搜尋結果頁B-2", "搜尋結果頁B-3", "個人頁C" };

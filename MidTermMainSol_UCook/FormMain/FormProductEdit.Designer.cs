@@ -71,7 +71,7 @@
 			this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(116)))), ((int)(((byte)(198)))));
 			this.buttonSave.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-			this.buttonSave.Location = new System.Drawing.Point(41, 1474);
+			this.buttonSave.Location = new System.Drawing.Point(34, 1127);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(105, 31);
 			this.buttonSave.TabIndex = 0;
@@ -84,7 +84,7 @@
 			this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 			this.buttonCancel.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonCancel.ForeColor = System.Drawing.Color.Black;
-			this.buttonCancel.Location = new System.Drawing.Point(173, 1474);
+			this.buttonCancel.Location = new System.Drawing.Point(166, 1127);
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(105, 31);
 			this.buttonCancel.TabIndex = 0;
@@ -96,7 +96,7 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label1.Location = new System.Drawing.Point(31, 436);
+			this.label1.Location = new System.Drawing.Point(28, 25);
 			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(41, 20);
@@ -107,7 +107,7 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label2.Location = new System.Drawing.Point(31, 706);
+			this.label2.Location = new System.Drawing.Point(32, 290);
 			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(41, 20);
@@ -118,7 +118,7 @@
 			// 
 			this.comboBoxCategory.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.comboBoxCategory.FormattingEnabled = true;
-			this.comboBoxCategory.Location = new System.Drawing.Point(84, 701);
+			this.comboBoxCategory.Location = new System.Drawing.Point(85, 285);
 			this.comboBoxCategory.Margin = new System.Windows.Forms.Padding(2);
 			this.comboBoxCategory.Name = "comboBoxCategory";
 			this.comboBoxCategory.Size = new System.Drawing.Size(189, 28);
@@ -128,7 +128,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label3.Location = new System.Drawing.Point(31, 742);
+			this.label3.Location = new System.Drawing.Point(32, 336);
 			this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(73, 20);
@@ -185,7 +185,7 @@
 			this.listViewSku.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.listViewSku.FullRowSelect = true;
 			this.listViewSku.HideSelection = false;
-			this.listViewSku.Location = new System.Drawing.Point(35, 897);
+			this.listViewSku.Location = new System.Drawing.Point(36, 519);
 			this.listViewSku.Margin = new System.Windows.Forms.Padding(2);
 			this.listViewSku.Name = "listViewSku";
 			this.listViewSku.Size = new System.Drawing.Size(439, 141);
@@ -226,7 +226,7 @@
 			this.buttonAddSku.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(116)))), ((int)(((byte)(198)))));
 			this.buttonAddSku.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonAddSku.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-			this.buttonAddSku.Location = new System.Drawing.Point(374, 862);
+			this.buttonAddSku.Location = new System.Drawing.Point(375, 484);
 			this.buttonAddSku.Name = "buttonAddSku";
 			this.buttonAddSku.Size = new System.Drawing.Size(105, 31);
 			this.buttonAddSku.TabIndex = 0;
@@ -239,7 +239,7 @@
 			this.buttonUpload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(116)))), ((int)(((byte)(198)))));
 			this.buttonUpload.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonUpload.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-			this.buttonUpload.Location = new System.Drawing.Point(499, 1405);
+			this.buttonUpload.Location = new System.Drawing.Point(494, 1050);
 			this.buttonUpload.Name = "buttonUpload";
 			this.buttonUpload.Size = new System.Drawing.Size(105, 31);
 			this.buttonUpload.TabIndex = 0;
@@ -251,7 +251,7 @@
 			// 
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label4.Location = new System.Drawing.Point(32, 867);
+			this.label4.Location = new System.Drawing.Point(33, 489);
 			this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(40, 20);
@@ -263,7 +263,7 @@
 			this.panel1.Controls.Add(this.radioButtonUnavailable);
 			this.panel1.Controls.Add(this.radioButtonOff);
 			this.panel1.Controls.Add(this.radioButtonOn);
-			this.panel1.Location = new System.Drawing.Point(115, 734);
+			this.panel1.Location = new System.Drawing.Point(116, 328);
 			this.panel1.Margin = new System.Windows.Forms.Padding(2);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(278, 37);
@@ -271,7 +271,7 @@
 			// 
 			// pictureBoxCover
 			// 
-			this.pictureBoxCover.Location = new System.Drawing.Point(84, 436);
+			this.pictureBoxCover.Location = new System.Drawing.Point(81, 25);
 			this.pictureBoxCover.Margin = new System.Windows.Forms.Padding(2);
 			this.pictureBoxCover.Name = "pictureBoxCover";
 			this.pictureBoxCover.Size = new System.Drawing.Size(233, 233);
@@ -284,7 +284,7 @@
 			this.buttonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 			this.buttonEdit.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonEdit.ForeColor = System.Drawing.Color.Black;
-			this.buttonEdit.Location = new System.Drawing.Point(495, 897);
+			this.buttonEdit.Location = new System.Drawing.Point(496, 519);
 			this.buttonEdit.Name = "buttonEdit";
 			this.buttonEdit.Size = new System.Drawing.Size(105, 31);
 			this.buttonEdit.TabIndex = 15;
@@ -297,7 +297,7 @@
 			this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 			this.buttonDelete.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonDelete.ForeColor = System.Drawing.Color.Black;
-			this.buttonDelete.Location = new System.Drawing.Point(495, 945);
+			this.buttonDelete.Location = new System.Drawing.Point(496, 567);
 			this.buttonDelete.Name = "buttonDelete";
 			this.buttonDelete.Size = new System.Drawing.Size(105, 31);
 			this.buttonDelete.TabIndex = 15;
@@ -310,7 +310,7 @@
 			this.buttonUploadCover.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(116)))), ((int)(((byte)(198)))));
 			this.buttonUploadCover.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonUploadCover.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-			this.buttonUploadCover.Location = new System.Drawing.Point(339, 638);
+			this.buttonUploadCover.Location = new System.Drawing.Point(336, 227);
 			this.buttonUploadCover.Name = "buttonUploadCover";
 			this.buttonUploadCover.Size = new System.Drawing.Size(105, 31);
 			this.buttonUploadCover.TabIndex = 0;
@@ -323,7 +323,7 @@
 			this.errorCover.AutoSize = true;
 			this.errorCover.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.errorCover.ForeColor = System.Drawing.Color.Red;
-			this.errorCover.Location = new System.Drawing.Point(461, 649);
+			this.errorCover.Location = new System.Drawing.Point(458, 238);
 			this.errorCover.Name = "errorCover";
 			this.errorCover.Size = new System.Drawing.Size(153, 20);
 			this.errorCover.TabIndex = 16;
@@ -335,7 +335,7 @@
 			this.errorOnShelf.AutoSize = true;
 			this.errorOnShelf.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.errorOnShelf.ForeColor = System.Drawing.Color.Red;
-			this.errorOnShelf.Location = new System.Drawing.Point(420, 742);
+			this.errorOnShelf.Location = new System.Drawing.Point(421, 336);
 			this.errorOnShelf.Name = "errorOnShelf";
 			this.errorOnShelf.Size = new System.Drawing.Size(121, 20);
 			this.errorOnShelf.TabIndex = 16;
@@ -347,7 +347,7 @@
 			this.errorFullDescriptionFilePath.AutoSize = true;
 			this.errorFullDescriptionFilePath.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.errorFullDescriptionFilePath.ForeColor = System.Drawing.Color.Red;
-			this.errorFullDescriptionFilePath.Location = new System.Drawing.Point(610, 1410);
+			this.errorFullDescriptionFilePath.Location = new System.Drawing.Point(605, 1055);
 			this.errorFullDescriptionFilePath.Name = "errorFullDescriptionFilePath";
 			this.errorFullDescriptionFilePath.Size = new System.Drawing.Size(185, 20);
 			this.errorFullDescriptionFilePath.TabIndex = 16;
@@ -359,7 +359,7 @@
 			this.errorCategory.AutoSize = true;
 			this.errorCategory.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.errorCategory.ForeColor = System.Drawing.Color.Red;
-			this.errorCategory.Location = new System.Drawing.Point(293, 706);
+			this.errorCategory.Location = new System.Drawing.Point(294, 290);
 			this.errorCategory.Name = "errorCategory";
 			this.errorCategory.Size = new System.Drawing.Size(153, 20);
 			this.errorCategory.TabIndex = 16;
@@ -371,7 +371,7 @@
 			this.textBoxProdName.afiledMaxCount = 30;
 			this.textBoxProdName.afiledName = "商品名稱";
 			this.textBoxProdName.afiledValue = "";
-			this.textBoxProdName.Location = new System.Drawing.Point(31, 810);
+			this.textBoxProdName.Location = new System.Drawing.Point(32, 427);
 			this.textBoxProdName.Name = "textBoxProdName";
 			this.textBoxProdName.Size = new System.Drawing.Size(650, 40);
 			this.textBoxProdName.TabIndex = 13;
@@ -380,7 +380,7 @@
 			// 
 			this.textBoxFullProdDescription.afiledName = "長說明(圖片)";
 			this.textBoxFullProdDescription.afiledValue = "";
-			this.textBoxFullProdDescription.Location = new System.Drawing.Point(35, 1405);
+			this.textBoxFullProdDescription.Location = new System.Drawing.Point(30, 1050);
 			this.textBoxFullProdDescription.Name = "textBoxFullProdDescription";
 			this.textBoxFullProdDescription.Size = new System.Drawing.Size(650, 40);
 			this.textBoxFullProdDescription.TabIndex = 11;
@@ -390,7 +390,7 @@
 			this.textBoxProdDescription.afiledMaxCount = 200;
 			this.textBoxProdDescription.afiledName = "簡短說明";
 			this.textBoxProdDescription.afiledValue = "";
-			this.textBoxProdDescription.Location = new System.Drawing.Point(32, 1185);
+			this.textBoxProdDescription.Location = new System.Drawing.Point(32, 829);
 			this.textBoxProdDescription.Name = "textBoxProdDescription";
 			this.textBoxProdDescription.Size = new System.Drawing.Size(680, 215);
 			this.textBoxProdDescription.TabIndex = 10;
@@ -399,7 +399,7 @@
 			// 
 			this.textBoxTagPrice.afiledName = "標籤價";
 			this.textBoxTagPrice.afiledValue = "";
-			this.textBoxTagPrice.Location = new System.Drawing.Point(32, 1107);
+			this.textBoxTagPrice.Location = new System.Drawing.Point(32, 730);
 			this.textBoxTagPrice.Name = "textBoxTagPrice";
 			this.textBoxTagPrice.Size = new System.Drawing.Size(886, 40);
 			this.textBoxTagPrice.TabIndex = 9;
@@ -408,7 +408,7 @@
 			// 
 			this.textBoxSalePrice.afiledName = "銷售價";
 			this.textBoxSalePrice.afiledValue = "";
-			this.textBoxSalePrice.Location = new System.Drawing.Point(32, 1146);
+			this.textBoxSalePrice.Location = new System.Drawing.Point(32, 783);
 			this.textBoxSalePrice.Name = "textBoxSalePrice";
 			this.textBoxSalePrice.Size = new System.Drawing.Size(874, 40);
 			this.textBoxSalePrice.TabIndex = 8;
@@ -417,7 +417,7 @@
 			// 
 			this.textBoxPurchasePrice.afiledName = "採購價";
 			this.textBoxPurchasePrice.afiledValue = "";
-			this.textBoxPurchasePrice.Location = new System.Drawing.Point(32, 1068);
+			this.textBoxPurchasePrice.Location = new System.Drawing.Point(32, 680);
 			this.textBoxPurchasePrice.Name = "textBoxPurchasePrice";
 			this.textBoxPurchasePrice.Size = new System.Drawing.Size(874, 40);
 			this.textBoxPurchasePrice.TabIndex = 8;
@@ -426,7 +426,7 @@
 			// 
 			this.textBoxSPU.afiledName = "SPU";
 			this.textBoxSPU.afiledValue = "";
-			this.textBoxSPU.Location = new System.Drawing.Point(31, 772);
+			this.textBoxSPU.Location = new System.Drawing.Point(32, 381);
 			this.textBoxSPU.Name = "textBoxSPU";
 			this.textBoxSPU.Size = new System.Drawing.Size(650, 40);
 			this.textBoxSPU.TabIndex = 1;

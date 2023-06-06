@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.Checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
 			this.col_SPU = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,7 +53,9 @@
 			// 
 			// dataGridView1
 			// 
-			this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Checkbox,
@@ -66,11 +68,11 @@
             this.col_SoldNumber,
             this.col_StockNumber,
             this.Operation});
-			this.dataGridView1.Location = new System.Drawing.Point(32, 142);
+			this.dataGridView1.Location = new System.Drawing.Point(15, 245);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersWidth = 62;
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(948, 271);
+			this.dataGridView1.Size = new System.Drawing.Size(1363, 211);
 			this.dataGridView1.TabIndex = 4;
 			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 			this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
@@ -149,9 +151,9 @@
 			// 
 			// Operation
 			// 
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle1.NullValue = "修改";
-			this.Operation.DefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle7.NullValue = "修改";
+			this.Operation.DefaultCellStyle = dataGridViewCellStyle7;
 			this.Operation.HeaderText = "操作";
 			this.Operation.MinimumWidth = 8;
 			this.Operation.Name = "Operation";
@@ -160,10 +162,10 @@
 			// 
 			// LabelRowCount
 			// 
-			this.LabelRowCount.Anchor = System.Windows.Forms.AnchorStyles.Right;
+			this.LabelRowCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.LabelRowCount.AutoSize = true;
 			this.LabelRowCount.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.LabelRowCount.Location = new System.Drawing.Point(480, -297);
+			this.LabelRowCount.Location = new System.Drawing.Point(1292, 209);
 			this.LabelRowCount.Name = "LabelRowCount";
 			this.LabelRowCount.Size = new System.Drawing.Size(83, 20);
 			this.LabelRowCount.TabIndex = 5;
@@ -220,7 +222,7 @@
 			// 
 			this.toast.AMessage = "儲存成功";
 			this.toast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.toast.Location = new System.Drawing.Point(13, 344);
+			this.toast.Location = new System.Drawing.Point(13, 416);
 			this.toast.Margin = new System.Windows.Forms.Padding(4);
 			this.toast.Name = "toast";
 			this.toast.Size = new System.Drawing.Size(203, 55);
@@ -229,10 +231,11 @@
 			// 
 			// buttonAddNewProduct
 			// 
+			this.buttonAddNewProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.buttonAddNewProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 			this.buttonAddNewProduct.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonAddNewProduct.ForeColor = System.Drawing.Color.Black;
-			this.buttonAddNewProduct.Location = new System.Drawing.Point(875, 105);
+			this.buttonAddNewProduct.Location = new System.Drawing.Point(1260, 39);
 			this.buttonAddNewProduct.Name = "buttonAddNewProduct";
 			this.buttonAddNewProduct.Size = new System.Drawing.Size(105, 31);
 			this.buttonAddNewProduct.TabIndex = 11;
@@ -245,7 +248,7 @@
 			this.buttonCSV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 			this.buttonCSV.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonCSV.ForeColor = System.Drawing.Color.Black;
-			this.buttonCSV.Location = new System.Drawing.Point(32, 105);
+			this.buttonCSV.Location = new System.Drawing.Point(15, 208);
 			this.buttonCSV.Name = "buttonCSV";
 			this.buttonCSV.Size = new System.Drawing.Size(105, 31);
 			this.buttonCSV.TabIndex = 8;
@@ -258,7 +261,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
-			this.ClientSize = new System.Drawing.Size(1025, 425);
+			this.ClientSize = new System.Drawing.Size(1387, 497);
 			this.Controls.Add(this.buttonAddNewProduct);
 			this.Controls.Add(this.buttonCSV);
 			this.Controls.Add(this.buttonClear);
@@ -270,6 +273,7 @@
 			this.Controls.Add(this.dataGridView1);
 			this.Name = "FormProductSearch";
 			this.Text = "搜尋商品";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.FormSearch_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);

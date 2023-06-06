@@ -43,7 +43,7 @@ namespace FormMain
             textBoxUpload.Validating += textBoxUpload_Validating;
 
             this.AutoScroll = true;
-			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(213)))), ((int)(((byte)(230)))));
+			
             
             comboBox1.Items.Add("首頁A-1");
             comboBox1.Items.Add("首頁A-2");

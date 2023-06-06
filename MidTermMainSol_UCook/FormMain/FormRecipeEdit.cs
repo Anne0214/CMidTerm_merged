@@ -185,14 +185,16 @@ namespace FormMain
             Button buttonDelete = new Button();
             buttonDelete.Size = new System.Drawing.Size(108, 29);
             buttonDelete.Text = "刪除";
-            buttonDelete.Click += DeleteIngredient;
-            buttonDelete.UseVisualStyleBackColor = true;
+			buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+			buttonDelete.Click += DeleteIngredient;
+           
 
             Button buttonInsert = new Button();
             buttonInsert.Size = new System.Drawing.Size(110, 29);
             buttonInsert.Text = "插入";
-            buttonInsert.Click += InsertIngredient;
-            buttonInsert.UseVisualStyleBackColor = true;
+			buttonInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+			buttonInsert.Click += InsertIngredient;
+
 
             this.tableIngredient.Controls.Add(textBoxLeft, 0, rowsCount);
             this.tableIngredient.Controls.Add(textBoxRight, 1, rowsCount);
@@ -238,14 +240,17 @@ namespace FormMain
             buttonDelete.Text = "刪除";
             buttonDelete.Click += DeleteIngredient;
             buttonDelete.UseVisualStyleBackColor = true;
+			buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 
-            Button buttonInsert = new Button();
+
+			Button buttonInsert = new Button();
             buttonInsert.Size = new System.Drawing.Size(110, 29);
             buttonInsert.Text = "插入";
             buttonInsert.Click += InsertIngredient;
-            buttonInsert.UseVisualStyleBackColor = true;
+			buttonInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 
-            this.tableIngredient.Controls.Add(textBoxLeft, 0, insertRowNum);
+
+			this.tableIngredient.Controls.Add(textBoxLeft, 0, insertRowNum);
             this.tableIngredient.Controls.Add(textBoxRight, 1, insertRowNum);
             this.tableIngredient.Controls.Add(buttonDelete, 2, insertRowNum);
             this.tableIngredient.Controls.Add(buttonInsert, 3, insertRowNum);
@@ -327,20 +332,21 @@ namespace FormMain
             buttonDeleteStep.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             buttonDeleteStep.Size = new System.Drawing.Size(93, 37);
             buttonDeleteStep.Text = "刪除";
-            buttonDeleteStep.UseVisualStyleBackColor = true;
             buttonDeleteStep.Click += DeleteStep;
+			buttonDeleteStep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 
 
-            Button buttonInsertStep = new Button();
+			Button buttonInsertStep = new Button();
             buttonInsertStep.Dock = System.Windows.Forms.DockStyle.Bottom;
             buttonInsertStep.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             buttonInsertStep.Size = new System.Drawing.Size(95, 37);
             buttonInsertStep.Text = "插入";
-            buttonInsertStep.UseVisualStyleBackColor = true;
             buttonInsertStep.Click += InsertStep;
+			buttonInsertStep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 
 
-            this.tableSteps.Controls.Add(labelStep, 0, rowsCount);
+
+			this.tableSteps.Controls.Add(labelStep, 0, rowsCount);
             this.tableSteps.Controls.Add(pictureBoxStep, 1, rowsCount);
             this.tableSteps.Controls.Add(textBoxStep, 2, rowsCount);
             this.tableSteps.Controls.Add(buttonDeleteStep, 3, rowsCount);
@@ -441,19 +447,20 @@ namespace FormMain
             buttonDeleteStep.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             buttonDeleteStep.Size = new System.Drawing.Size(93, 37);
             buttonDeleteStep.Text = "刪除";
-            buttonDeleteStep.UseVisualStyleBackColor = true;
             buttonDeleteStep.Click += DeleteStep;
+			buttonDeleteStep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 
-            Button buttonInsertStep = new Button();
+
+			Button buttonInsertStep = new Button();
             buttonInsertStep.Dock = System.Windows.Forms.DockStyle.Bottom;
             buttonInsertStep.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             buttonInsertStep.Size = new System.Drawing.Size(95, 37);
             buttonInsertStep.Text = "插入";
-            buttonInsertStep.UseVisualStyleBackColor = true;
             buttonInsertStep.Click += InsertStep;
+			buttonInsertStep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 
 
-            this.tableSteps.Controls.Add(labelStep, 0, insertRowNum);
+			this.tableSteps.Controls.Add(labelStep, 0, insertRowNum);
             this.tableSteps.Controls.Add(pictureBoxStep, 1, insertRowNum);
             this.tableSteps.Controls.Add(textBoxStep, 2, insertRowNum);
             this.tableSteps.Controls.Add(buttonDeleteStep, 3, insertRowNum);

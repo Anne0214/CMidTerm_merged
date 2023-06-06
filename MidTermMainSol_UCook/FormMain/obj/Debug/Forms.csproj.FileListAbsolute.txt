@@ -216,3 +216,14 @@ C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\bin\Debug\EntityFram
 C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\bin\Debug\zh-Hant\EntityFramework.resources.dll
 C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\obj\Debug\Forms.csproj.CopyComplete
+C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\obj\Debug\FormMain.FormCategoryAddLevel123PK.resources
+C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\obj\Debug\FormMain.FormCategoryAddLevelOne.resources
+C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\obj\Debug\FormMain.FormCategoryAddLevelThree.resources
+C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\obj\Debug\FormMain.FormCategoryAddLevelTwo.resources
+C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\obj\Debug\FormMain.FormCategoryDeleteLevelOne.resources
+C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\obj\Debug\FormMain.FormCategoryDeleteLevelThree.resources
+C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\obj\Debug\FormMain.FormCategoryDeleteLevelTwo.resources
+C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\obj\Debug\FormMain.FormCategorySearch.resources
+C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\obj\Debug\FormMain.FormCategoryUpdataLevelTwo.resources
+C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\obj\Debug\FormMain.FormCategoryUpdateLevelOne.resources
+C:\Users\User\CMidTerm_merged\MidTermMainSol_UCook\FormMain\obj\Debug\FormMain.FormCategoryUpdateLevelThree.resources

@@ -21,7 +21,6 @@ namespace FormMain
         {
             InitializeComponent();
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(213)))), ((int)(((byte)(230)))));
             dataGridView1.BackgroundColor = Color.FromArgb(255, 255, 253); //背景色
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(237, 243, 255); //雙行色
         }
@@ -81,7 +80,7 @@ namespace FormMain
                 string member_id = dataGridView1.Rows[e.RowIndex].Cells["col_member_pk"].Value.ToString();//傳給Get() Method
                 FormMemberEdit frm = new FormMemberEdit(member_id);
                 frm.Owner = this;//方可呼叫Display()
-                frm.ShowDialog();//此頁面關閉之前不得show
+                frm.Show();//此頁面關閉之前不得show
             }
         }
         private DataGridViewButtonColumn ButtonColumn()

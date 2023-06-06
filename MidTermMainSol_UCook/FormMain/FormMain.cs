@@ -65,5 +65,12 @@ namespace FormMain
             frm.Show();
 
         }
-    }
+
+		private void toolStripButtonCategory_Click(object sender, EventArgs e)
+		{
+            FormCategorySearch frm = new FormCategorySearch(); 
+            frm.MdiParent = this;
+            frm.Show();
+		}
+	}
 }

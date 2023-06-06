@@ -63,6 +63,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheckInput.cs" />
+    <Compile Include="EF Models_category\CATEGORY_食譜分類_LEVEL_ONE.cs" />
+    <Compile Include="EF Models_category\CATEGORY_食譜分類_LEVEL_ONE_TMP.cs" />
+    <Compile Include="EF Models_category\CATEGORY_食譜分類_LEVEL_THREE.cs" />
+    <Compile Include="EF Models_category\CATEGORY_食譜分類_LEVEL_THREE_TMP.cs" />
+    <Compile Include="EF Models_category\CATEGORY_食譜分類_LEVEL_TWO.cs" />
+    <Compile Include="EF Models_category\CATEGORY_食譜分類_LEVEL_TWO_TMP.cs" />
+    <Compile Include="EF Models_category\Model1.Context.cs" />
+    <Compile Include="EF Models_category\Model1.cs" />
+    <Compile Include="EF Models_category\Model1.designer.cs">
+      <DependentUpon>Model1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EF Models_category\RECIPE_食譜.cs" />
+    <Compile Include="EF Models_category\RECIPE_食譜_TMP.cs" />
+    <Compile Include="EF Models_category\RECIPE_食譜_TMPTest.cs" />
     <Compile Include="EF Models_recipe\AppDbContext.cs" />
     <Compile Include="EF Models_recipe\CATEGORY_食譜分類_LEVEL_ONE.cs" />
     <Compile Include="EF Models_recipe\CATEGORY_食譜分類_LEVEL_THREE.cs" />
@@ -71,6 +85,72 @@
     <Compile Include="EF Models_recipe\MEMBER_會員.cs" />
     <Compile Include="EF Models_recipe\RECIPE_食譜.cs" />
     <Compile Include="EF Models_recipe\STEP_步驟列表.cs" />
+    <Compile Include="FormCategoryAddLevel123PK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoryAddLevel123PK.designer.cs">
+      <DependentUpon>FormCategoryAddLevel123PK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoryAddLevelOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoryAddLevelOne.designer.cs">
+      <DependentUpon>FormCategoryAddLevelOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoryAddLevelThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoryAddLevelThree.designer.cs">
+      <DependentUpon>FormCategoryAddLevelThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoryAddLevelTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoryAddLevelTwo.designer.cs">
+      <DependentUpon>FormCategoryAddLevelTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoryDeleteLevelOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoryDeleteLevelOne.designer.cs">
+      <DependentUpon>FormCategoryDeleteLevelOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoryDeleteLevelThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoryDeleteLevelThree.designer.cs">
+      <DependentUpon>FormCategoryDeleteLevelThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoryDeleteLevelTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoryDeleteLevelTwo.designer.cs">
+      <DependentUpon>FormCategoryDeleteLevelTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategorySearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategorySearch.designer.cs">
+      <DependentUpon>FormCategorySearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoryUpdataLevelTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoryUpdataLevelTwo.designer.cs">
+      <DependentUpon>FormCategoryUpdataLevelTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoryUpdateLevelOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoryUpdateLevelOne.designer.cs">
+      <DependentUpon>FormCategoryUpdateLevelOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoryUpdateLevelThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoryUpdateLevelThree.designer.cs">
+      <DependentUpon>FormCategoryUpdateLevelThree.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMarketingCreate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +301,39 @@
     <Compile Include="ViewModels\ProductDetailVM.cs" />
     <Compile Include="ViewModels\ProductSearchVM.cs" />
     <Compile Include="ViewModels\SkuVM.cs" />
+    <EmbeddedResource Include="FormCategoryAddLevel123PK.resx">
+      <DependentUpon>FormCategoryAddLevel123PK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoryAddLevelOne.resx">
+      <DependentUpon>FormCategoryAddLevelOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoryAddLevelThree.resx">
+      <DependentUpon>FormCategoryAddLevelThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoryAddLevelTwo.resx">
+      <DependentUpon>FormCategoryAddLevelTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoryDeleteLevelOne.resx">
+      <DependentUpon>FormCategoryDeleteLevelOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoryDeleteLevelThree.resx">
+      <DependentUpon>FormCategoryDeleteLevelThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoryDeleteLevelTwo.resx">
+      <DependentUpon>FormCategoryDeleteLevelTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategorySearch.resx">
+      <DependentUpon>FormCategorySearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoryUpdataLevelTwo.resx">
+      <DependentUpon>FormCategoryUpdataLevelTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoryUpdateLevelOne.resx">
+      <DependentUpon>FormCategoryUpdateLevelOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoryUpdateLevelThree.resx">
+      <DependentUpon>FormCategoryUpdateLevelThree.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMarketingCreate.resx">
       <DependentUpon>FormMarketingCreate.cs</DependentUpon>
     </EmbeddedResource>
@@ -280,6 +393,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControls\TextBoxCannotBeChanged.resx">
       <DependentUpon>TextBoxCannotBeChanged.cs</DependentUpon>
@@ -319,6 +433,8 @@
       <Name>ISpan2023.UCook.BackEnd</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
