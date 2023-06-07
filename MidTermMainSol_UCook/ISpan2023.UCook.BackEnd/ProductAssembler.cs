@@ -7,6 +7,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace ISpan2023.UCook.BackEnd
 {
@@ -22,6 +23,7 @@ namespace ISpan2023.UCook.BackEnd
                 Func<SqlDataReader, ProductSearchDto> func = (reader) =>
                 {
                     string spu = reader.GetString("SPU");
+                    string cover = reader.GetString("img");
                     string productName = reader.GetString("PRODUCT_NAME商品名稱");
                     string category = reader.GetString("CATEGORY商品分類名稱");
                     string onShelf = reader.GetString("ON_SHELF上架狀態");
@@ -29,10 +31,20 @@ namespace ISpan2023.UCook.BackEnd
                     string allSku = reader.GetString("SKU");
                     int stockNumber = reader.GetInt("STOCK_NUMBER庫存數量");
                     int soldNumber = reader.GetInt("SOLD_NUMBER售出數量");
-                    
+
+      //              Bitmap cover_bitmap =new Bitmap(cover);
+      //              if (cover.Contains("http"))
+      //              {
+						//cover_bitmap = (Bitmap)Image.FromStream(System.Net.WebRequest.Create(cover).GetResponse().GetResponseStream());
+      //              }
+      //              else
+      //              {
+      //                  cover_bitmap = (Bitmap)Image.FromFile(cover);
+      //              }
     
                     return new ProductSearchDto
-                    {   Spu = spu,
+                    {   /*Cover = cover_bitmap,*/
+                        Spu = spu,
                         ProductName= productName,
                         Category= category,
                         OnShelf= onShelf,

@@ -27,7 +27,7 @@ namespace ISpan2023.UCook.BackEnd
         {
 
             #region 組成sql語法
-            string sql = @"Select a.SPU,[ON_SHELF上架狀態],[CATEGORY商品分類名稱],[PRODUCT_NAME商品名稱],[SALE_PRICE銷售價],SKU,STOCK_NUMBER庫存數量,SOLD_NUMBER售出數量
+            string sql = @"Select a.SPU,[img],[ON_SHELF上架狀態],[CATEGORY商品分類名稱],[PRODUCT_NAME商品名稱],[SALE_PRICE銷售價],SKU,STOCK_NUMBER庫存數量,SOLD_NUMBER售出數量
 From [dbo].[PRODUCT_SPU_商品] as a
 Join PRODUCT_SEARCH as b  
 On a.SPU = b.SPU";
@@ -54,7 +54,7 @@ Where SKU Like @target";
             }
 
             sql += @"
-Group By a.SPU,[ON_SHELF上架狀態],[CATEGORY商品分類名稱],[PRODUCT_NAME商品名稱],[SALE_PRICE銷售價],SKU,STOCK_NUMBER庫存數量,SOLD_NUMBER售出數量";
+Group By a.SPU,[img],[ON_SHELF上架狀態],[CATEGORY商品分類名稱],[PRODUCT_NAME商品名稱],[SALE_PRICE銷售價],SKU,STOCK_NUMBER庫存數量,SOLD_NUMBER售出數量";
             #endregion
 
             Func<SqlConnection> conn = SqlDb.GetConnection;

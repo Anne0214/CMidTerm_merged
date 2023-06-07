@@ -30,6 +30,14 @@
 		{
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.LabelRowCount = new System.Windows.Forms.Label();
+			this.textBoxSearch = new System.Windows.Forms.TextBox();
+			this.comboBoxTarget = new System.Windows.Forms.ComboBox();
+			this.buttonClear = new System.Windows.Forms.Button();
+			this.buttonSearch = new System.Windows.Forms.Button();
+			this.buttonAddNewProduct = new System.Windows.Forms.Button();
+			this.buttonCSV = new System.Windows.Forms.Button();
+			this.toast = new FormItem.Toast();
 			this.Checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
 			this.col_SPU = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.col_ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,14 +48,6 @@
 			this.col_SoldNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.col_StockNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Operation = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.LabelRowCount = new System.Windows.Forms.Label();
-			this.textBoxSearch = new System.Windows.Forms.TextBox();
-			this.comboBoxTarget = new System.Windows.Forms.ComboBox();
-			this.buttonClear = new System.Windows.Forms.Button();
-			this.buttonSearch = new System.Windows.Forms.Button();
-			this.toast = new FormItem.Toast();
-			this.buttonAddNewProduct = new System.Windows.Forms.Button();
-			this.buttonCSV = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -80,6 +80,102 @@
 			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 			this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
 			this.dataGridView1.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_ColumnHeaderMouseClick);
+			// 
+			// LabelRowCount
+			// 
+			this.LabelRowCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.LabelRowCount.AutoSize = true;
+			this.LabelRowCount.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.LabelRowCount.Location = new System.Drawing.Point(1292, 209);
+			this.LabelRowCount.Name = "LabelRowCount";
+			this.LabelRowCount.Size = new System.Drawing.Size(83, 20);
+			this.LabelRowCount.TabIndex = 5;
+			this.LabelRowCount.Text = "總共OO筆";
+			// 
+			// textBoxSearch
+			// 
+			this.textBoxSearch.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.textBoxSearch.Location = new System.Drawing.Point(168, 39);
+			this.textBoxSearch.Margin = new System.Windows.Forms.Padding(2);
+			this.textBoxSearch.Name = "textBoxSearch";
+			this.textBoxSearch.Size = new System.Drawing.Size(505, 29);
+			this.textBoxSearch.TabIndex = 6;
+			this.textBoxSearch.Click += new System.EventHandler(this.textBoxSearch_Click);
+			// 
+			// comboBoxTarget
+			// 
+			this.comboBoxTarget.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.comboBoxTarget.FormattingEnabled = true;
+			this.comboBoxTarget.Location = new System.Drawing.Point(32, 39);
+			this.comboBoxTarget.Margin = new System.Windows.Forms.Padding(2);
+			this.comboBoxTarget.Name = "comboBoxTarget";
+			this.comboBoxTarget.Size = new System.Drawing.Size(122, 28);
+			this.comboBoxTarget.TabIndex = 7;
+			this.comboBoxTarget.Text = "商品名稱";
+			// 
+			// buttonClear
+			// 
+			this.buttonClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+			this.buttonClear.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.buttonClear.ForeColor = System.Drawing.Color.Black;
+			this.buttonClear.Location = new System.Drawing.Point(801, 39);
+			this.buttonClear.Name = "buttonClear";
+			this.buttonClear.Size = new System.Drawing.Size(105, 31);
+			this.buttonClear.TabIndex = 8;
+			this.buttonClear.Text = "清除";
+			this.buttonClear.UseVisualStyleBackColor = false;
+			this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+			// 
+			// buttonSearch
+			// 
+			this.buttonSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(116)))), ((int)(((byte)(198)))));
+			this.buttonSearch.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.buttonSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+			this.buttonSearch.Location = new System.Drawing.Point(691, 39);
+			this.buttonSearch.Name = "buttonSearch";
+			this.buttonSearch.Size = new System.Drawing.Size(105, 31);
+			this.buttonSearch.TabIndex = 9;
+			this.buttonSearch.Text = "搜尋";
+			this.buttonSearch.UseVisualStyleBackColor = false;
+			this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+			// 
+			// buttonAddNewProduct
+			// 
+			this.buttonAddNewProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.buttonAddNewProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+			this.buttonAddNewProduct.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.buttonAddNewProduct.ForeColor = System.Drawing.Color.Black;
+			this.buttonAddNewProduct.Location = new System.Drawing.Point(1260, 39);
+			this.buttonAddNewProduct.Name = "buttonAddNewProduct";
+			this.buttonAddNewProduct.Size = new System.Drawing.Size(105, 31);
+			this.buttonAddNewProduct.TabIndex = 11;
+			this.buttonAddNewProduct.Text = "新增商品";
+			this.buttonAddNewProduct.UseVisualStyleBackColor = false;
+			this.buttonAddNewProduct.Click += new System.EventHandler(this.buttonAddNewProduct_Click);
+			// 
+			// buttonCSV
+			// 
+			this.buttonCSV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+			this.buttonCSV.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.buttonCSV.ForeColor = System.Drawing.Color.Black;
+			this.buttonCSV.Location = new System.Drawing.Point(15, 208);
+			this.buttonCSV.Name = "buttonCSV";
+			this.buttonCSV.Size = new System.Drawing.Size(105, 31);
+			this.buttonCSV.TabIndex = 8;
+			this.buttonCSV.Text = "輸出成CSV";
+			this.buttonCSV.UseVisualStyleBackColor = false;
+			this.buttonCSV.Click += new System.EventHandler(this.buttonCSV_Click);
+			// 
+			// toast
+			// 
+			this.toast.AMessage = "儲存成功";
+			this.toast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.toast.Location = new System.Drawing.Point(13, 416);
+			this.toast.Margin = new System.Windows.Forms.Padding(4);
+			this.toast.Name = "toast";
+			this.toast.Size = new System.Drawing.Size(203, 55);
+			this.toast.TabIndex = 1;
+			this.toast.Visible = false;
 			// 
 			// Checkbox
 			// 
@@ -173,102 +269,6 @@
 			this.Operation.Text = "修改";
 			this.Operation.Width = 150;
 			// 
-			// LabelRowCount
-			// 
-			this.LabelRowCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.LabelRowCount.AutoSize = true;
-			this.LabelRowCount.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.LabelRowCount.Location = new System.Drawing.Point(1292, 209);
-			this.LabelRowCount.Name = "LabelRowCount";
-			this.LabelRowCount.Size = new System.Drawing.Size(83, 20);
-			this.LabelRowCount.TabIndex = 5;
-			this.LabelRowCount.Text = "總共OO筆";
-			// 
-			// textBoxSearch
-			// 
-			this.textBoxSearch.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.textBoxSearch.Location = new System.Drawing.Point(168, 39);
-			this.textBoxSearch.Margin = new System.Windows.Forms.Padding(2);
-			this.textBoxSearch.Name = "textBoxSearch";
-			this.textBoxSearch.Size = new System.Drawing.Size(505, 29);
-			this.textBoxSearch.TabIndex = 6;
-			this.textBoxSearch.Click += new System.EventHandler(this.textBoxSearch_Click);
-			// 
-			// comboBoxTarget
-			// 
-			this.comboBoxTarget.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.comboBoxTarget.FormattingEnabled = true;
-			this.comboBoxTarget.Location = new System.Drawing.Point(32, 39);
-			this.comboBoxTarget.Margin = new System.Windows.Forms.Padding(2);
-			this.comboBoxTarget.Name = "comboBoxTarget";
-			this.comboBoxTarget.Size = new System.Drawing.Size(122, 28);
-			this.comboBoxTarget.TabIndex = 7;
-			this.comboBoxTarget.Text = "商品名稱";
-			// 
-			// buttonClear
-			// 
-			this.buttonClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-			this.buttonClear.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.buttonClear.ForeColor = System.Drawing.Color.Black;
-			this.buttonClear.Location = new System.Drawing.Point(801, 39);
-			this.buttonClear.Name = "buttonClear";
-			this.buttonClear.Size = new System.Drawing.Size(105, 31);
-			this.buttonClear.TabIndex = 8;
-			this.buttonClear.Text = "清除";
-			this.buttonClear.UseVisualStyleBackColor = false;
-			this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
-			// 
-			// buttonSearch
-			// 
-			this.buttonSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(116)))), ((int)(((byte)(198)))));
-			this.buttonSearch.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.buttonSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-			this.buttonSearch.Location = new System.Drawing.Point(691, 39);
-			this.buttonSearch.Name = "buttonSearch";
-			this.buttonSearch.Size = new System.Drawing.Size(105, 31);
-			this.buttonSearch.TabIndex = 9;
-			this.buttonSearch.Text = "搜尋";
-			this.buttonSearch.UseVisualStyleBackColor = false;
-			this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
-			// 
-			// toast
-			// 
-			this.toast.AMessage = "儲存成功";
-			this.toast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.toast.Location = new System.Drawing.Point(13, 416);
-			this.toast.Margin = new System.Windows.Forms.Padding(4);
-			this.toast.Name = "toast";
-			this.toast.Size = new System.Drawing.Size(203, 55);
-			this.toast.TabIndex = 1;
-			this.toast.Visible = false;
-			// 
-			// buttonAddNewProduct
-			// 
-			this.buttonAddNewProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.buttonAddNewProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-			this.buttonAddNewProduct.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.buttonAddNewProduct.ForeColor = System.Drawing.Color.Black;
-			this.buttonAddNewProduct.Location = new System.Drawing.Point(1260, 39);
-			this.buttonAddNewProduct.Name = "buttonAddNewProduct";
-			this.buttonAddNewProduct.Size = new System.Drawing.Size(105, 31);
-			this.buttonAddNewProduct.TabIndex = 11;
-			this.buttonAddNewProduct.Text = "新增商品";
-			this.buttonAddNewProduct.UseVisualStyleBackColor = false;
-			this.buttonAddNewProduct.Click += new System.EventHandler(this.buttonAddNewProduct_Click);
-			// 
-			// buttonCSV
-			// 
-			this.buttonCSV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-			this.buttonCSV.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.buttonCSV.ForeColor = System.Drawing.Color.Black;
-			this.buttonCSV.Location = new System.Drawing.Point(15, 208);
-			this.buttonCSV.Name = "buttonCSV";
-			this.buttonCSV.Size = new System.Drawing.Size(105, 31);
-			this.buttonCSV.TabIndex = 8;
-			this.buttonCSV.Text = "輸出成CSV";
-			this.buttonCSV.UseVisualStyleBackColor = false;
-			this.buttonCSV.Click += new System.EventHandler(this.buttonCSV_Click);
-			// 
 			// FormProductSearch
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -302,17 +302,17 @@
         private System.Windows.Forms.ComboBox comboBoxTarget;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonSearch;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Checkbox;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_SPU;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_ProductName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_OnShelf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_CategoryName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_SalePrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_Skus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_SoldNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_StockNumber;
-        private System.Windows.Forms.DataGridViewButtonColumn Operation;
 		private System.Windows.Forms.Button buttonAddNewProduct;
         private System.Windows.Forms.Button buttonCSV;
-    }
+		private System.Windows.Forms.DataGridViewCheckBoxColumn Checkbox;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_SPU;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_ProductName;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_OnShelf;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_CategoryName;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_SalePrice;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_Skus;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_SoldNumber;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_StockNumber;
+		private System.Windows.Forms.DataGridViewButtonColumn Operation;
+	}
 }

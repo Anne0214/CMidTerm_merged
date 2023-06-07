@@ -113,7 +113,7 @@ namespace FormMain
 				item.AllSku = item.AllSku.Substring(1);
 			}
 
-
+			
 			dataGridView1.DataSource = data;
 		}
 

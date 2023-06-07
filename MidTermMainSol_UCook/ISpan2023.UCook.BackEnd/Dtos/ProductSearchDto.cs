@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
+
 
 namespace ISpan2023.UCook.BackEnd.Dtos
 {
     public class ProductSearchDto
     {
         //從資料庫拿的資料，用於查詢介面
+  
+        //public Bitmap Cover { get; set; }
         public string Spu { get; set; }
         public string ProductName { get; set; }
         public string OnShelf { get; set; }
