@@ -111,7 +111,7 @@
 			this.Controls.Add(this.textBoxStockNumber);
 			this.Controls.Add(this.textBoxSku);
 			this.Name = "FormSkuForEditProduct";
-			this.Text = "SKU";
+			this.Text = "修改SKU";
 			this.ResumeLayout(false);
 
 		}

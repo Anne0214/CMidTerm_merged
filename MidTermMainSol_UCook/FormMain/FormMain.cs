@@ -22,7 +22,9 @@ namespace FormMain
         {
             FormLogin frm= new FormLogin();
             frm.ShowDialog();
-			//todo 避免重複開啟的程式碼
+
+            RemoveMdiBackColor();
+
 		}
 
 		private void toolStripButtonLeave_Click(object sender, EventArgs e)
@@ -72,5 +74,17 @@ namespace FormMain
             frm.MdiParent = this;
             frm.Show();
 		}
+		void RemoveMdiBackColor()
+		{
+			foreach (Control c in this.Controls)
+			{
+				if (c is MdiClient)
+				{
+					c.BackColor = this.BackColor;
+					c.BackgroundImage = this.BackgroundImage;
+				}
+			}
+		}
+
 	}
 }

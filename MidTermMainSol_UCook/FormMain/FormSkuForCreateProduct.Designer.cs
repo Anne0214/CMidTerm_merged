@@ -90,7 +90,7 @@
 			this.Controls.Add(this.textBoxStockNumber);
 			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "FormSkuForCreateProduct";
-			this.Text = "SKU";
+			this.Text = "修改SKU";
 			this.ResumeLayout(false);
 
         }

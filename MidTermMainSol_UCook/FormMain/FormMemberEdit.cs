@@ -24,7 +24,7 @@ namespace FormMain
 
         private void FormEditMember_Load(object sender, EventArgs e)
         {
-            FormBorderStyle = FormBorderStyle.None;
+            //FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
 
             var repo = new MemberRepository();

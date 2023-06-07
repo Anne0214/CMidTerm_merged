@@ -47,7 +47,6 @@
 			this.buttonUpload = new System.Windows.Forms.Button();
 			this.label4 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.pictureBoxCover = new System.Windows.Forms.PictureBox();
 			this.buttonEdit = new System.Windows.Forms.Button();
 			this.buttonDelete = new System.Windows.Forms.Button();
 			this.buttonUploadCover = new System.Windows.Forms.Button();
@@ -55,6 +54,7 @@
 			this.errorOnShelf = new System.Windows.Forms.Label();
 			this.errorFullDescriptionFilePath = new System.Windows.Forms.Label();
 			this.errorCategory = new System.Windows.Forms.Label();
+			this.pictureBoxCover = new System.Windows.Forms.PictureBox();
 			this.textBoxProdName = new TextBoxAndTable.TextBoxWordLimit();
 			this.textBoxFullProdDescription = new TextBoxAndTable.TextBoxCannotBeChanged();
 			this.textBoxProdDescription = new TextBoxAndTable.TextBoxMultiline();
@@ -269,16 +269,6 @@
 			this.panel1.Size = new System.Drawing.Size(278, 37);
 			this.panel1.TabIndex = 12;
 			// 
-			// pictureBoxCover
-			// 
-			this.pictureBoxCover.Location = new System.Drawing.Point(81, 25);
-			this.pictureBoxCover.Margin = new System.Windows.Forms.Padding(2);
-			this.pictureBoxCover.Name = "pictureBoxCover";
-			this.pictureBoxCover.Size = new System.Drawing.Size(233, 233);
-			this.pictureBoxCover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBoxCover.TabIndex = 14;
-			this.pictureBoxCover.TabStop = false;
-			// 
 			// buttonEdit
 			// 
 			this.buttonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
@@ -366,6 +356,16 @@
 			this.errorCategory.Text = "請選擇至少一種分類";
 			this.errorCategory.Visible = false;
 			// 
+			// pictureBoxCover
+			// 
+			this.pictureBoxCover.Location = new System.Drawing.Point(81, 25);
+			this.pictureBoxCover.Margin = new System.Windows.Forms.Padding(2);
+			this.pictureBoxCover.Name = "pictureBoxCover";
+			this.pictureBoxCover.Size = new System.Drawing.Size(233, 233);
+			this.pictureBoxCover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBoxCover.TabIndex = 14;
+			this.pictureBoxCover.TabStop = false;
+			// 
 			// textBoxProdName
 			// 
 			this.textBoxProdName.afiledMaxCount = 30;
@@ -436,7 +436,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
-			this.ClientSize = new System.Drawing.Size(1300, 683);
+			this.ClientSize = new System.Drawing.Size(1895, 683);
 			this.Controls.Add(this.errorFullDescriptionFilePath);
 			this.Controls.Add(this.errorCategory);
 			this.Controls.Add(this.errorOnShelf);
@@ -465,7 +465,7 @@
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Name = "FormProductEdit";
-			this.Text = "編輯商品";
+			this.Text = "編輯商品資訊";
 			this.Load += new System.EventHandler(this.FormProductEdit_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();

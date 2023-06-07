@@ -330,7 +330,7 @@
 			this.Margin = new System.Windows.Forms.Padding(5);
 			this.Name = "FormCategorySearch";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-			this.Text = "FEATURED_CATEGORY精選分類LEVE123";
+			this.Text = "精選分類管理";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.CATEGORY_食譜分類_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

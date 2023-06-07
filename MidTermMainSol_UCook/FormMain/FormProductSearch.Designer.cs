@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.Checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
 			this.col_SPU = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +53,8 @@
 			// 
 			// dataGridView1
 			// 
+			this.dataGridView1.AllowUserToAddRows = false;
+			this.dataGridView1.AllowUserToDeleteRows = false;
 			this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -70,6 +72,7 @@
             this.Operation});
 			this.dataGridView1.Location = new System.Drawing.Point(15, 245);
 			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.ReadOnly = true;
 			this.dataGridView1.RowHeadersWidth = 62;
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.Size = new System.Drawing.Size(1363, 211);
@@ -83,6 +86,7 @@
 			this.Checkbox.HeaderText = "請選取";
 			this.Checkbox.MinimumWidth = 8;
 			this.Checkbox.Name = "Checkbox";
+			this.Checkbox.ReadOnly = true;
 			this.Checkbox.Width = 150;
 			// 
 			// col_SPU
@@ -91,6 +95,7 @@
 			this.col_SPU.HeaderText = "SPU";
 			this.col_SPU.MinimumWidth = 8;
 			this.col_SPU.Name = "col_SPU";
+			this.col_SPU.ReadOnly = true;
 			this.col_SPU.Width = 150;
 			// 
 			// col_ProductName
@@ -99,6 +104,7 @@
 			this.col_ProductName.HeaderText = "產品名稱";
 			this.col_ProductName.MinimumWidth = 8;
 			this.col_ProductName.Name = "col_ProductName";
+			this.col_ProductName.ReadOnly = true;
 			this.col_ProductName.Width = 150;
 			// 
 			// col_OnShelf
@@ -107,6 +113,7 @@
 			this.col_OnShelf.HeaderText = "上架狀態";
 			this.col_OnShelf.MinimumWidth = 8;
 			this.col_OnShelf.Name = "col_OnShelf";
+			this.col_OnShelf.ReadOnly = true;
 			this.col_OnShelf.Width = 150;
 			// 
 			// col_CategoryName
@@ -115,6 +122,7 @@
 			this.col_CategoryName.HeaderText = "分類";
 			this.col_CategoryName.MinimumWidth = 8;
 			this.col_CategoryName.Name = "col_CategoryName";
+			this.col_CategoryName.ReadOnly = true;
 			this.col_CategoryName.Width = 150;
 			// 
 			// col_SalePrice
@@ -123,6 +131,7 @@
 			this.col_SalePrice.HeaderText = "銷售價";
 			this.col_SalePrice.MinimumWidth = 8;
 			this.col_SalePrice.Name = "col_SalePrice";
+			this.col_SalePrice.ReadOnly = true;
 			this.col_SalePrice.Width = 150;
 			// 
 			// col_Skus
@@ -131,6 +140,7 @@
 			this.col_Skus.HeaderText = "SKU";
 			this.col_Skus.MinimumWidth = 8;
 			this.col_Skus.Name = "col_Skus";
+			this.col_Skus.ReadOnly = true;
 			this.col_Skus.Width = 150;
 			// 
 			// col_SoldNumber
@@ -139,6 +149,7 @@
 			this.col_SoldNumber.HeaderText = "銷售數量";
 			this.col_SoldNumber.MinimumWidth = 8;
 			this.col_SoldNumber.Name = "col_SoldNumber";
+			this.col_SoldNumber.ReadOnly = true;
 			this.col_SoldNumber.Width = 150;
 			// 
 			// col_StockNumber
@@ -147,16 +158,18 @@
 			this.col_StockNumber.HeaderText = "庫存數量";
 			this.col_StockNumber.MinimumWidth = 8;
 			this.col_StockNumber.Name = "col_StockNumber";
+			this.col_StockNumber.ReadOnly = true;
 			this.col_StockNumber.Width = 150;
 			// 
 			// Operation
 			// 
-			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle7.NullValue = "修改";
-			this.Operation.DefaultCellStyle = dataGridViewCellStyle7;
+			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle1.NullValue = "修改";
+			this.Operation.DefaultCellStyle = dataGridViewCellStyle1;
 			this.Operation.HeaderText = "操作";
 			this.Operation.MinimumWidth = 8;
 			this.Operation.Name = "Operation";
+			this.Operation.ReadOnly = true;
 			this.Operation.Text = "修改";
 			this.Operation.Width = 150;
 			// 
@@ -272,7 +285,7 @@
 			this.Controls.Add(this.toast);
 			this.Controls.Add(this.dataGridView1);
 			this.Name = "FormProductSearch";
-			this.Text = "搜尋商品";
+			this.Text = "商品管理";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.FormSearch_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

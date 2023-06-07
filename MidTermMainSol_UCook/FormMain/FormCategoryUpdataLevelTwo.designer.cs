@@ -73,7 +73,7 @@
 			this.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.Margin = new System.Windows.Forms.Padding(5);
 			this.Name = "FormCategoryUpdataLevelTwo";
-			this.Text = "CATEGORY_食譜分類_LEVEL_TWO";
+			this.Text = "修改分類名稱";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

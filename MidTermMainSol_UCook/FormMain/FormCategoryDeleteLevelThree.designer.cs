@@ -73,7 +73,7 @@
 			this.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.Margin = new System.Windows.Forms.Padding(5);
 			this.Name = "FormCategoryDeleteLevelThree";
-			this.Text = "Form3";
+			this.Text = "刪除第三層分類";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
@@ -42,6 +43,9 @@
 			this.buttonSearch = new System.Windows.Forms.Button();
 			this.buttonClear = new System.Windows.Forms.Button();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.totalrows = new System.Windows.Forms.Label();
+			this.comboBoxOrderby = new System.Windows.Forms.ComboBox();
+			this.toast1 = new FormItem.Toast();
 			this.Checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
 			this.col_member_pk = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.col_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,9 +57,6 @@
 			this.col_received_person_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.col_received_person_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.col_received_person_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.totalrows = new System.Windows.Forms.Label();
-			this.comboBoxOrderby = new System.Windows.Forms.ComboBox();
-			this.toast1 = new FormItem.Toast();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -155,7 +156,7 @@
 			// 
 			this.buttonSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.buttonSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(116)))), ((int)(((byte)(198)))));
-			this.buttonSearch.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.buttonSearch.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonSearch.ForeColor = System.Drawing.Color.White;
 			this.buttonSearch.Location = new System.Drawing.Point(1222, 170);
 			this.buttonSearch.Name = "buttonSearch";
@@ -169,7 +170,7 @@
 			// 
 			this.buttonClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.buttonClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
-			this.buttonClear.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.buttonClear.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonClear.Location = new System.Drawing.Point(1111, 170);
 			this.buttonClear.Name = "buttonClear";
 			this.buttonClear.Size = new System.Drawing.Size(105, 31);
@@ -198,20 +199,63 @@
             this.col_received_person_name,
             this.col_received_person_phone,
             this.col_received_person_address});
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
 			this.dataGridView1.Location = new System.Drawing.Point(15, 245);
 			this.dataGridView1.Name = "dataGridView1";
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.Size = new System.Drawing.Size(1363, 221);
 			this.dataGridView1.TabIndex = 49;
 			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+			// 
+			// totalrows
+			// 
+			this.totalrows.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.totalrows.AutoSize = true;
+			this.totalrows.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.totalrows.Location = new System.Drawing.Point(1222, 215);
+			this.totalrows.Name = "totalrows";
+			this.totalrows.Size = new System.Drawing.Size(45, 20);
+			this.totalrows.TabIndex = 50;
+			this.totalrows.Text = "總共:";
+			// 
+			// comboBoxOrderby
+			// 
+			this.comboBoxOrderby.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.comboBoxOrderby.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.comboBoxOrderby.FormattingEnabled = true;
+			this.comboBoxOrderby.Items.AddRange(new object[] {
+            "註冊時間由遠至近",
+            "註冊時間由近至遠"});
+			this.comboBoxOrderby.Location = new System.Drawing.Point(1060, 211);
+			this.comboBoxOrderby.Name = "comboBoxOrderby";
+			this.comboBoxOrderby.Size = new System.Drawing.Size(156, 28);
+			this.comboBoxOrderby.TabIndex = 6;
+			this.comboBoxOrderby.Text = "排序";
+			// 
+			// toast1
+			// 
+			this.toast1.AMessage = "label1";
+			this.toast1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.toast1.Location = new System.Drawing.Point(12, 430);
+			this.toast1.Name = "toast1";
+			this.toast1.Size = new System.Drawing.Size(203, 55);
+			this.toast1.TabIndex = 52;
+			this.toast1.Visible = false;
 			// 
 			// Checkbox
 			// 
@@ -286,40 +330,6 @@
 			this.col_received_person_address.HeaderText = "收件人地址";
 			this.col_received_person_address.Name = "col_received_person_address";
 			// 
-			// totalrows
-			// 
-			this.totalrows.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.totalrows.AutoSize = true;
-			this.totalrows.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.totalrows.Location = new System.Drawing.Point(1222, 215);
-			this.totalrows.Name = "totalrows";
-			this.totalrows.Size = new System.Drawing.Size(45, 20);
-			this.totalrows.TabIndex = 50;
-			this.totalrows.Text = "總共:";
-			// 
-			// comboBoxOrderby
-			// 
-			this.comboBoxOrderby.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.comboBoxOrderby.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.comboBoxOrderby.FormattingEnabled = true;
-			this.comboBoxOrderby.Items.AddRange(new object[] {
-            "註冊時間由遠至近",
-            "註冊時間由近至遠"});
-			this.comboBoxOrderby.Location = new System.Drawing.Point(1060, 211);
-			this.comboBoxOrderby.Name = "comboBoxOrderby";
-			this.comboBoxOrderby.Size = new System.Drawing.Size(156, 28);
-			this.comboBoxOrderby.TabIndex = 6;
-			this.comboBoxOrderby.Text = "排序";
-			// 
-			// toast1
-			// 
-			this.toast1.AMessage = "label1";
-			this.toast1.Location = new System.Drawing.Point(12, 430);
-			this.toast1.Name = "toast1";
-			this.toast1.Size = new System.Drawing.Size(203, 55);
-			this.toast1.TabIndex = 52;
-			this.toast1.Visible = false;
-			// 
 			// FormMemberSearch
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -343,7 +353,8 @@
 			this.Controls.Add(this.textBoxPhone);
 			this.Controls.Add(this.textBoxNickname);
 			this.Name = "FormMemberSearch";
-			this.Text = "FormMember";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.Text = "會員管理";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.FormMember_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -366,19 +377,19 @@
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Checkbox;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_member_pk;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_password;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_registertime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_Nickname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_profilephoto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_Self_Intro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_received_person_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_received_person_phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_received_person_address;
         private System.Windows.Forms.Label totalrows;
         private System.Windows.Forms.ComboBox comboBoxOrderby;
 		private FormItem.Toast toast1;
+		private System.Windows.Forms.DataGridViewCheckBoxColumn Checkbox;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_member_pk;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_email;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_password;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_registertime;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_Nickname;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_profilephoto;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_Self_Intro;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_received_person_name;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_received_person_phone;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_received_person_address;
 	}
 }

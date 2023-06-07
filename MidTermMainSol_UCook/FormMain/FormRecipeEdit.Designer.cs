@@ -154,7 +154,7 @@
 			// 
 			// comboBoxAmount
 			// 
-			this.comboBoxAmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(213)))), ((int)(((byte)(230)))));
+			this.comboBoxAmount.BackColor = System.Drawing.SystemColors.Window;
 			this.comboBoxAmount.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.comboBoxAmount.FormattingEnabled = true;
 			this.comboBoxAmount.Location = new System.Drawing.Point(158, 636);
@@ -198,7 +198,7 @@
 			this.tabControl1.Controls.Add(this.tabPage2);
 			this.tabControl1.Controls.Add(this.tabPage3);
 			this.tabControl1.Location = new System.Drawing.Point(8, 14);
-			this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
 			this.tabControl1.Name = "tabControl1";
 			this.tabControl1.SelectedIndex = 0;
 			this.tabControl1.Size = new System.Drawing.Size(1001, 975);
@@ -227,12 +227,12 @@
 			this.tabPage1.Controls.Add(this.textBoxRecipeName);
 			this.tabPage1.Controls.Add(this.textBoxRecipePk);
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
-			this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
 			this.tabPage1.Name = "tabPage1";
-			this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
 			this.tabPage1.Size = new System.Drawing.Size(993, 949);
 			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "基本資料";
+			this.tabPage1.Text = "編輯食譜";
 			// 
 			// buttonPrevious1
 			// 
@@ -265,7 +265,7 @@
 			this.textBoxPublishedTime.afiledName = "發表時間";
 			this.textBoxPublishedTime.afiledValue = "";
 			this.textBoxPublishedTime.Location = new System.Drawing.Point(11, 520);
-			this.textBoxPublishedTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.textBoxPublishedTime.Margin = new System.Windows.Forms.Padding(4);
 			this.textBoxPublishedTime.Name = "textBoxPublishedTime";
 			this.textBoxPublishedTime.Size = new System.Drawing.Size(650, 40);
 			this.textBoxPublishedTime.TabIndex = 16;
@@ -276,7 +276,7 @@
 			this.textBoxShortDescription.afiledName = "簡短說明";
 			this.textBoxShortDescription.afiledValue = "";
 			this.textBoxShortDescription.Location = new System.Drawing.Point(10, 679);
-			this.textBoxShortDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.textBoxShortDescription.Margin = new System.Windows.Forms.Padding(4);
 			this.textBoxShortDescription.Name = "textBoxShortDescription";
 			this.textBoxShortDescription.Size = new System.Drawing.Size(890, 215);
 			this.textBoxShortDescription.TabIndex = 17;
@@ -286,7 +286,7 @@
 			this.textBoxAuthor.afiledName = "作者PK";
 			this.textBoxAuthor.afiledValue = "";
 			this.textBoxAuthor.Location = new System.Drawing.Point(11, 463);
-			this.textBoxAuthor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.textBoxAuthor.Margin = new System.Windows.Forms.Padding(4);
 			this.textBoxAuthor.Name = "textBoxAuthor";
 			this.textBoxAuthor.Size = new System.Drawing.Size(650, 40);
 			this.textBoxAuthor.TabIndex = 16;
@@ -297,7 +297,7 @@
 			this.textBoxRecipeName.afiledName = "食譜名稱";
 			this.textBoxRecipeName.afiledValue = "";
 			this.textBoxRecipeName.Location = new System.Drawing.Point(11, 407);
-			this.textBoxRecipeName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.textBoxRecipeName.Margin = new System.Windows.Forms.Padding(4);
 			this.textBoxRecipeName.Name = "textBoxRecipeName";
 			this.textBoxRecipeName.Size = new System.Drawing.Size(720, 40);
 			this.textBoxRecipeName.TabIndex = 15;
@@ -307,7 +307,7 @@
 			this.textBoxRecipePk.afiledName = "食譜PK";
 			this.textBoxRecipePk.afiledValue = "";
 			this.textBoxRecipePk.Location = new System.Drawing.Point(11, 353);
-			this.textBoxRecipePk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.textBoxRecipePk.Margin = new System.Windows.Forms.Padding(4);
 			this.textBoxRecipePk.Name = "textBoxRecipePk";
 			this.textBoxRecipePk.Size = new System.Drawing.Size(650, 40);
 			this.textBoxRecipePk.TabIndex = 14;
@@ -322,9 +322,9 @@
 			this.tabPage2.Controls.Add(this.buttonIngredientAdd);
 			this.tabPage2.Controls.Add(this.label5);
 			this.tabPage2.Location = new System.Drawing.Point(4, 22);
-			this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
 			this.tabPage2.Name = "tabPage2";
-			this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
 			this.tabPage2.Size = new System.Drawing.Size(993, 949);
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "食材";
@@ -369,7 +369,7 @@
 			this.tableIngredient.Controls.Add(this.button3, 2, 0);
 			this.tableIngredient.Controls.Add(this.button4, 3, 0);
 			this.tableIngredient.Location = new System.Drawing.Point(74, 32);
-			this.tableIngredient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.tableIngredient.Margin = new System.Windows.Forms.Padding(2);
 			this.tableIngredient.Name = "tableIngredient";
 			this.tableIngredient.RowCount = 1;
 			this.tableIngredient.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
@@ -380,7 +380,7 @@
 			// 
 			this.textBoxFood1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.textBoxFood1.Location = new System.Drawing.Point(2, 2);
-			this.textBoxFood1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.textBoxFood1.Margin = new System.Windows.Forms.Padding(2);
 			this.textBoxFood1.Name = "textBoxFood1";
 			this.textBoxFood1.Size = new System.Drawing.Size(175, 29);
 			this.textBoxFood1.TabIndex = 0;
@@ -389,7 +389,7 @@
 			// 
 			this.textBoxFoodAmount1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.textBoxFoodAmount1.Location = new System.Drawing.Point(185, 2);
-			this.textBoxFoodAmount1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.textBoxFoodAmount1.Margin = new System.Windows.Forms.Padding(2);
 			this.textBoxFoodAmount1.Name = "textBoxFoodAmount1";
 			this.textBoxFoodAmount1.Size = new System.Drawing.Size(175, 29);
 			this.textBoxFoodAmount1.TabIndex = 1;
@@ -399,7 +399,7 @@
 			this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 			this.button3.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.button3.Location = new System.Drawing.Point(368, 2);
-			this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button3.Margin = new System.Windows.Forms.Padding(2);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(73, 26);
 			this.button3.TabIndex = 2;
@@ -411,7 +411,7 @@
 			this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 			this.button4.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.button4.Location = new System.Drawing.Point(446, 2);
-			this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button4.Margin = new System.Windows.Forms.Padding(2);
 			this.button4.Name = "button4";
 			this.button4.Size = new System.Drawing.Size(75, 26);
 			this.button4.TabIndex = 3;
@@ -423,7 +423,7 @@
 			this.buttonIngredientAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 			this.buttonIngredientAdd.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonIngredientAdd.Location = new System.Drawing.Point(74, 83);
-			this.buttonIngredientAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.buttonIngredientAdd.Margin = new System.Windows.Forms.Padding(2);
 			this.buttonIngredientAdd.Name = "buttonIngredientAdd";
 			this.buttonIngredientAdd.Size = new System.Drawing.Size(353, 32);
 			this.buttonIngredientAdd.TabIndex = 2;
@@ -455,9 +455,9 @@
 			this.tabPage3.Controls.Add(this.label6);
 			this.tabPage3.Controls.Add(this.tableSteps);
 			this.tabPage3.Location = new System.Drawing.Point(4, 22);
-			this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
 			this.tabPage3.Name = "tabPage3";
-			this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
 			this.tabPage3.Size = new System.Drawing.Size(993, 949);
 			this.tabPage3.TabIndex = 2;
 			this.tabPage3.Text = "步驟";
@@ -465,7 +465,7 @@
 			// panel1
 			// 
 			this.panel1.Location = new System.Drawing.Point(380, 223);
-			this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.panel1.Margin = new System.Windows.Forms.Padding(2);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(133, 107);
 			this.panel1.TabIndex = 23;
@@ -531,7 +531,7 @@
 			this.buttonStepAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
 			this.buttonStepAdd.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonStepAdd.Location = new System.Drawing.Point(221, 190);
-			this.buttonStepAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.buttonStepAdd.Margin = new System.Windows.Forms.Padding(2);
 			this.buttonStepAdd.Name = "buttonStepAdd";
 			this.buttonStepAdd.Size = new System.Drawing.Size(458, 29);
 			this.buttonStepAdd.TabIndex = 2;
@@ -564,7 +564,7 @@
 			this.tableSteps.Controls.Add(this.buttonStepDelete, 3, 0);
 			this.tableSteps.Controls.Add(this.buttonStepInsert, 4, 0);
 			this.tableSteps.Location = new System.Drawing.Point(153, 27);
-			this.tableSteps.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.tableSteps.Margin = new System.Windows.Forms.Padding(2);
 			this.tableSteps.Name = "tableSteps";
 			this.tableSteps.RowCount = 1;
 			this.tableSteps.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 147F));
@@ -585,7 +585,7 @@
 			// pictureStep1
 			// 
 			this.pictureStep1.Location = new System.Drawing.Point(68, 2);
-			this.pictureStep1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.pictureStep1.Margin = new System.Windows.Forms.Padding(2);
 			this.pictureStep1.Name = "pictureStep1";
 			this.pictureStep1.Size = new System.Drawing.Size(172, 129);
 			this.pictureStep1.TabIndex = 1;
@@ -595,7 +595,7 @@
 			// 
 			this.textBoxStep1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.textBoxStep1.Location = new System.Drawing.Point(266, 2);
-			this.textBoxStep1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.textBoxStep1.Margin = new System.Windows.Forms.Padding(2);
 			this.textBoxStep1.Multiline = true;
 			this.textBoxStep1.Name = "textBoxStep1";
 			this.textBoxStep1.Size = new System.Drawing.Size(260, 131);
@@ -607,7 +607,7 @@
 			this.buttonStepDelete.Dock = System.Windows.Forms.DockStyle.Bottom;
 			this.buttonStepDelete.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonStepDelete.Location = new System.Drawing.Point(530, 120);
-			this.buttonStepDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.buttonStepDelete.Margin = new System.Windows.Forms.Padding(2);
 			this.buttonStepDelete.Name = "buttonStepDelete";
 			this.buttonStepDelete.Size = new System.Drawing.Size(62, 25);
 			this.buttonStepDelete.TabIndex = 3;
@@ -620,7 +620,7 @@
 			this.buttonStepInsert.Dock = System.Windows.Forms.DockStyle.Bottom;
 			this.buttonStepInsert.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.buttonStepInsert.Location = new System.Drawing.Point(596, 120);
-			this.buttonStepInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.buttonStepInsert.Margin = new System.Windows.Forms.Padding(2);
 			this.buttonStepInsert.Name = "buttonStepInsert";
 			this.buttonStepInsert.Size = new System.Drawing.Size(63, 25);
 			this.buttonStepInsert.TabIndex = 4;
@@ -632,7 +632,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
-			this.ClientSize = new System.Drawing.Size(1283, 700);
+			this.ClientSize = new System.Drawing.Size(1317, 700);
 			this.Controls.Add(this.tabControl1);
 			this.Name = "FormRecipeEdit";
 			this.Text = "FormRecipeEdit";

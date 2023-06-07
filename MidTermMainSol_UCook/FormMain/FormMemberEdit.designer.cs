@@ -194,7 +194,7 @@
 			this.Controls.Add(this.textBoxCannotBeChangedMember_ID);
 			this.Controls.Add(this.textBoxMultilineSelfIntro);
 			this.Name = "FormMemberEdit";
-			this.Text = "FormEditMember";
+			this.Text = "修改會員資料";
 			this.Load += new System.EventHandler(this.FormEditMember_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
 			this.ResumeLayout(false);

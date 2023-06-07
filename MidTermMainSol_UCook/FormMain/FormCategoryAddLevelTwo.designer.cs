@@ -74,7 +74,7 @@
 			this.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
 			this.Name = "FormCategoryAddLevelTwo";
-			this.Text = "CATEGORY_食譜分類_LEVEL_TWO";
+			this.Text = "新增第二層分類";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

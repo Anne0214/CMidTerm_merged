@@ -145,10 +145,9 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.dataGridView1);
 			this.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Margin = new System.Windows.Forms.Padding(5);
 			this.Name = "FormCategoryAddLevel123PK";
-			this.Text = "Form1";
+			this.Text = "增加食譜到分類";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.AddLevel123PK_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

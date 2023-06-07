@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.buttonCSV = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.textBoxRecipePk = new System.Windows.Forms.TextBox();
@@ -41,20 +41,20 @@
 			this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
 			this.label5 = new System.Windows.Forms.Label();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.Checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-			this.col_SPU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.col_ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.col_OnShelf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.col_CategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.col_SalePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.col_Skus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Operation = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.LabelRowCount = new System.Windows.Forms.Label();
 			this.buttonClear = new System.Windows.Forms.Button();
 			this.buttonSearch = new System.Windows.Forms.Button();
 			this.dateTimePickerEnd = new System.Windows.Forms.DateTimePicker();
 			this.label6 = new System.Windows.Forms.Label();
 			this.toast = new FormItem.Toast();
+			this.Checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+			this.col_recipePk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.col_RecipeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.col_memberPk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.col_Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.col_category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.col_publishedTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Operation = new System.Windows.Forms.DataGridViewButtonColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -171,12 +171,12 @@
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Checkbox,
-            this.col_SPU,
-            this.col_ProductName,
-            this.col_OnShelf,
-            this.col_CategoryName,
-            this.col_SalePrice,
-            this.col_Skus,
+            this.col_recipePk,
+            this.col_RecipeName,
+            this.col_memberPk,
+            this.col_Author,
+            this.col_category,
+            this.col_publishedTime,
             this.Operation});
 			this.dataGridView1.Location = new System.Drawing.Point(15, 245);
 			this.dataGridView1.Name = "dataGridView1";
@@ -185,72 +185,6 @@
 			this.dataGridView1.Size = new System.Drawing.Size(1363, 211);
 			this.dataGridView1.TabIndex = 13;
 			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-			// 
-			// Checkbox
-			// 
-			this.Checkbox.HeaderText = "請選取";
-			this.Checkbox.MinimumWidth = 8;
-			this.Checkbox.Name = "Checkbox";
-			this.Checkbox.Width = 150;
-			// 
-			// col_SPU
-			// 
-			this.col_SPU.DataPropertyName = "RecipePk";
-			this.col_SPU.HeaderText = "食譜PK";
-			this.col_SPU.MinimumWidth = 8;
-			this.col_SPU.Name = "col_SPU";
-			this.col_SPU.Width = 150;
-			// 
-			// col_ProductName
-			// 
-			this.col_ProductName.DataPropertyName = "RecipeName";
-			this.col_ProductName.HeaderText = "標題";
-			this.col_ProductName.MinimumWidth = 8;
-			this.col_ProductName.Name = "col_ProductName";
-			this.col_ProductName.Width = 150;
-			// 
-			// col_OnShelf
-			// 
-			this.col_OnShelf.DataPropertyName = "AuthorPK";
-			this.col_OnShelf.HeaderText = "會員PK";
-			this.col_OnShelf.MinimumWidth = 8;
-			this.col_OnShelf.Name = "col_OnShelf";
-			this.col_OnShelf.Width = 150;
-			// 
-			// col_CategoryName
-			// 
-			this.col_CategoryName.DataPropertyName = "NickName";
-			this.col_CategoryName.HeaderText = "會員暱稱";
-			this.col_CategoryName.MinimumWidth = 8;
-			this.col_CategoryName.Name = "col_CategoryName";
-			this.col_CategoryName.Width = 150;
-			// 
-			// col_SalePrice
-			// 
-			this.col_SalePrice.DataPropertyName = "Category";
-			this.col_SalePrice.HeaderText = "精選分類";
-			this.col_SalePrice.MinimumWidth = 8;
-			this.col_SalePrice.Name = "col_SalePrice";
-			this.col_SalePrice.Width = 150;
-			// 
-			// col_Skus
-			// 
-			this.col_Skus.DataPropertyName = "PublishedTime";
-			this.col_Skus.HeaderText = "發表時間";
-			this.col_Skus.MinimumWidth = 8;
-			this.col_Skus.Name = "col_Skus";
-			this.col_Skus.Width = 150;
-			// 
-			// Operation
-			// 
-			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle6.NullValue = "修改";
-			this.Operation.DefaultCellStyle = dataGridViewCellStyle6;
-			this.Operation.HeaderText = "操作";
-			this.Operation.MinimumWidth = 8;
-			this.Operation.Name = "Operation";
-			this.Operation.Text = "修改";
-			this.Operation.Width = 150;
 			// 
 			// LabelRowCount
 			// 
@@ -323,6 +257,72 @@
 			this.toast.TabIndex = 12;
 			this.toast.Visible = false;
 			// 
+			// Checkbox
+			// 
+			this.Checkbox.HeaderText = "請選取";
+			this.Checkbox.MinimumWidth = 8;
+			this.Checkbox.Name = "Checkbox";
+			this.Checkbox.Width = 150;
+			// 
+			// col_recipePk
+			// 
+			this.col_recipePk.DataPropertyName = "RecipePk";
+			this.col_recipePk.HeaderText = "食譜PK";
+			this.col_recipePk.MinimumWidth = 8;
+			this.col_recipePk.Name = "col_recipePk";
+			this.col_recipePk.Width = 150;
+			// 
+			// col_RecipeName
+			// 
+			this.col_RecipeName.DataPropertyName = "RecipeName";
+			this.col_RecipeName.HeaderText = "標題";
+			this.col_RecipeName.MinimumWidth = 8;
+			this.col_RecipeName.Name = "col_RecipeName";
+			this.col_RecipeName.Width = 150;
+			// 
+			// col_memberPk
+			// 
+			this.col_memberPk.DataPropertyName = "AuthorPK";
+			this.col_memberPk.HeaderText = "會員PK";
+			this.col_memberPk.MinimumWidth = 8;
+			this.col_memberPk.Name = "col_memberPk";
+			this.col_memberPk.Width = 150;
+			// 
+			// col_Author
+			// 
+			this.col_Author.DataPropertyName = "NickName";
+			this.col_Author.HeaderText = "會員暱稱";
+			this.col_Author.MinimumWidth = 8;
+			this.col_Author.Name = "col_Author";
+			this.col_Author.Width = 150;
+			// 
+			// col_category
+			// 
+			this.col_category.DataPropertyName = "Category";
+			this.col_category.HeaderText = "精選分類";
+			this.col_category.MinimumWidth = 8;
+			this.col_category.Name = "col_category";
+			this.col_category.Width = 150;
+			// 
+			// col_publishedTime
+			// 
+			this.col_publishedTime.DataPropertyName = "PublishedTime";
+			this.col_publishedTime.HeaderText = "發表時間";
+			this.col_publishedTime.MinimumWidth = 8;
+			this.col_publishedTime.Name = "col_publishedTime";
+			this.col_publishedTime.Width = 150;
+			// 
+			// Operation
+			// 
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle2.NullValue = "修改";
+			this.Operation.DefaultCellStyle = dataGridViewCellStyle2;
+			this.Operation.HeaderText = "操作";
+			this.Operation.MinimumWidth = 8;
+			this.Operation.Name = "Operation";
+			this.Operation.Text = "修改";
+			this.Operation.Width = 150;
+			// 
 			// FormRecipeSearch
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -347,7 +347,7 @@
 			this.Controls.Add(this.toast);
 			this.Controls.Add(this.dataGridView1);
 			this.Name = "FormRecipeSearch";
-			this.Text = "FormRecipeSearch";
+			this.Text = "食譜管理";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.FormRecipeSearch_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -376,13 +376,13 @@
 		private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.DateTimePicker dateTimePickerEnd;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Checkbox;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_SPU;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_ProductName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_OnShelf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_CategoryName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_SalePrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_Skus;
-        private System.Windows.Forms.DataGridViewButtonColumn Operation;
-    }
+		private System.Windows.Forms.DataGridViewCheckBoxColumn Checkbox;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_recipePk;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_RecipeName;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_memberPk;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_Author;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_category;
+		private System.Windows.Forms.DataGridViewTextBoxColumn col_publishedTime;
+		private System.Windows.Forms.DataGridViewButtonColumn Operation;
+	}
 }

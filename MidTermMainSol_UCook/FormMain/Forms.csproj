@@ -221,7 +221,6 @@
     <Compile Include="FormProductSearch.Designer.cs">
       <DependentUpon>FormProductSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="IExportCSV.cs" />
     <Compile Include="ImageUpload.cs" />
     <Compile Include="INotify.cs" />
     <Compile Include="Staff.cs" />
@@ -416,6 +415,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recipe-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\merchandising.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-advertising.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-full-screen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

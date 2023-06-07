@@ -38,6 +38,8 @@ namespace FormMain
             dataGridView1.GridColor = Color.FromArgb(255, 255, 253);
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.Columns[0].DefaultCellStyle.BackColor = Color.FromArgb(255, 255, 253);
+            Operation.FlatStyle = FlatStyle.Flat;
+
 
             string[] targets = new string[] { "SKU", "商品名稱", "SPU" };
             comboBoxTarget.Items.AddRange(targets);
@@ -156,7 +158,7 @@ namespace FormMain
         { 
             if (dataGridView1.Columns[e.ColumnIndex].Name =="Operation" && e.RowIndex > 0) //只有對資料點擊修改時會發動
             {
-                string spu = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                string spu = dataGridView1.Rows[e.RowIndex].Cells["col_SPU"].Value.ToString();
 
                 FormProductEdit frm = new FormProductEdit(spu);
                 frm.Owner = this;
@@ -277,7 +279,7 @@ namespace FormMain
                 bool flag = Convert.ToBoolean(selectedRow.Value);
                 if(flag)
                 {
-                    spus.Add(dataGridView1.Rows[i].Cells[2].Value.ToString());
+                    spus.Add(dataGridView1.Rows[i].Cells["col_SPU"].Value.ToString());
 
                 }
             }
@@ -286,6 +288,7 @@ namespace FormMain
             List<ProductCSVDto> dtos = new List<ProductCSVDto>();
             var repo = new ProductRepositories();
             dtos = repo.GetDetailBySpu(spus).ToList();
+            
 
             //產出我的dict
             Dictionary<string, string> pairs = new Dictionary<string, string>()

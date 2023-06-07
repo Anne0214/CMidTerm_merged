@@ -375,7 +375,7 @@
 			this.Controls.Add(this.LabelRowCount);
 			this.Controls.Add(this.dataGridView1);
 			this.Name = "FormMarketingSearch";
-			this.Text = "廣告版面搜尋";
+			this.Text = "廣告版面管理";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.FormSearch_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

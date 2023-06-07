@@ -35,7 +35,6 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
 			this.label3 = new System.Windows.Forms.Label();
-			this.pictureBoxImage = new System.Windows.Forms.PictureBox();
 			this.buttonUpload = new System.Windows.Forms.Button();
 			this.label4 = new System.Windows.Forms.Label();
 			this.dateTimePickerEnd = new System.Windows.Forms.DateTimePicker();
@@ -54,11 +53,12 @@
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.textBoxUpload = new System.Windows.Forms.TextBox();
 			this.labelImg = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBoxImage)).BeginInit();
+			this.pictureBoxImage = new System.Windows.Forms.PictureBox();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.panel4.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBoxImage)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// buttonSave
@@ -136,15 +136,6 @@
 			this.label3.Size = new System.Drawing.Size(41, 20);
 			this.label3.TabIndex = 5;
 			this.label3.Text = "圖片";
-			// 
-			// pictureBoxImage
-			// 
-			this.pictureBoxImage.BackColor = System.Drawing.Color.Silver;
-			this.pictureBoxImage.Location = new System.Drawing.Point(99, 270);
-			this.pictureBoxImage.Name = "pictureBoxImage";
-			this.pictureBoxImage.Size = new System.Drawing.Size(315, 249);
-			this.pictureBoxImage.TabIndex = 8;
-			this.pictureBoxImage.TabStop = false;
 			// 
 			// buttonUpload
 			// 
@@ -334,6 +325,15 @@
 			this.labelImg.Text = "請上傳圖片";
 			this.labelImg.Visible = false;
 			// 
+			// pictureBoxImage
+			// 
+			this.pictureBoxImage.BackColor = System.Drawing.Color.Silver;
+			this.pictureBoxImage.Location = new System.Drawing.Point(99, 270);
+			this.pictureBoxImage.Name = "pictureBoxImage";
+			this.pictureBoxImage.Size = new System.Drawing.Size(315, 249);
+			this.pictureBoxImage.TabIndex = 8;
+			this.pictureBoxImage.TabStop = false;
+			// 
 			// FormMarketingEdit
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -363,9 +363,8 @@
 			this.Controls.Add(this.buttonUpload);
 			this.Controls.Add(this.buttonSave);
 			this.Name = "FormMarketingEdit";
-			this.Text = "廣告版面編輯";
+			this.Text = "編輯廣告版面";
 			this.Load += new System.EventHandler(this.FormEdit_Load);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBoxImage)).EndInit();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.panel2.ResumeLayout(false);
@@ -374,6 +373,7 @@
 			this.panel3.PerformLayout();
 			this.panel4.ResumeLayout(false);
 			this.panel4.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBoxImage)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

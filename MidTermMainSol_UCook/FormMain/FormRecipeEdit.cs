@@ -33,10 +33,15 @@ namespace FormMain
             comboBoxCostMinutes.Items.AddRange(costMinutes);
             comboBoxAmount.Items.AddRange(amount);
 
+
             tabControl1.ItemSize = new Size(0, 1);
             tabControl1.Appearance = TabAppearance.FlatButtons;
             tabControl1.SizeMode = TabSizeMode.Fixed;
-        }
+            tabPage1.BorderStyle = BorderStyle.None;
+			tabPage2.BorderStyle = BorderStyle.None;
+			tabPage3.BorderStyle = BorderStyle.None;
+
+		}
         private void Get()
         {
             #region 取得資料
@@ -125,7 +130,9 @@ namespace FormMain
 
             if(!string.IsNullOrEmpty(recipeInfo.AMOUNT_份量))
             {
-                comboBoxAmount.SelectedItem = recipeInfo.AMOUNT_份量;
+                string amount = recipeInfo.AMOUNT_份量.TrimEnd('0').TrimEnd('.');
+				comboBoxAmount.SelectedItem =amount;
+
             }
             else
             {
@@ -148,8 +155,8 @@ namespace FormMain
             textBoxFood1.Text = food.First().FOOD_NAME食材名稱;
             textBoxFoodAmount1.Text = food.First().FOOD_AMOUNT食材數量;
 
-            textBoxFood1.Text = food[0].FOOD_NAME食材名稱;
-            textBoxFoodAmount1.Text = food[1].FOOD_AMOUNT食材數量;
+            //textBoxFood1.Text = food[0].FOOD_NAME食材名稱;
+            //textBoxFoodAmount1.Text = food[1].FOOD_AMOUNT食材數量; //不知道哪裡來的code
         
             foreach(var f in food.GetRange(1,food.Count-1))
             {
@@ -157,8 +164,10 @@ namespace FormMain
             }
 
             //步驟
-            textBoxStep1.Text = step[0].STEP_DESCRIPTION步驟說明;
-            img.ReadImage(pictureStep1, step[0].STEP_DESCRIPTION_PICTURE步驟附圖, @"https://i.imgur.com/Um6a2HT.png");
+            textBoxStep1.Text = step.First().STEP_DESCRIPTION步驟說明;
+            img.ReadImage(pictureStep1, step.First().STEP_DESCRIPTION_PICTURE步驟附圖, @"https://i.imgur.com/Um6a2HT.png");
+            //textBoxStep1.Text = step[0].STEP_DESCRIPTION步驟說明;
+            //img.ReadImage(pictureStep1, step[0].STEP_DESCRIPTION_PICTURE步驟附圖, @"https://i.imgur.com/Um6a2HT.png");
 
             foreach(var s in step.GetRange(1, step.Count - 1))
             {
