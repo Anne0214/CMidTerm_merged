@@ -29,11 +29,15 @@ function panelDisplay(activePanel) {
 
 //數量器用
 const counter = document.getElementById("num");
-const add_btn = documment.getElementById("add_btn");
-const minus_btn = documment.getElementById("minus_btn");
+const add_btn = document.getElementById("add_btn");
+const minus_btn = document.getElementById("minus_btn");
 add_btn.addEventListener('click', function() {
-    counter.value = counter.value + 1;
+    const num = +(counter.value);
+    if(num<5)
+        counter.value = num+1;
 });
 minus_btn.addEventListener('click', function() {
-    counter.value = counter.value - 1;
+    const num1 = +(counter.value);
+    if(num1>1)
+        counter.value = num1-1;
 });
