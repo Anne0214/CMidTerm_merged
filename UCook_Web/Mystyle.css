@@ -1,0 +1,83 @@
+.Mywrapper {
+  margin: 150px auto;
+  width: 60%;
+}
+.text-box {
+  color: #000000;
+  margin-top: 0;
+}
+.description-box h2 {
+  font-size: 42px;
+  margin-bottom: 0;
+}
+.firstpicture {
+  width: 500;
+  height: auto;
+  float: left;
+  margin-right: 15px;
+}
+
+.description-box img {
+  width: 5%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid rgb(255, 183, 0);
+}
+.Mysearch {
+  width: 250%;
+}
+.search-btn {
+  text-align: right;
+}
+.Selfdelicious-btn {
+  min-width: 160px;
+  height: 60px;
+  color: #ffffff;
+  border: none;
+  border-left: 3px solid #1c8314;
+  border-radius: 0;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 58px;
+  font-weight: 600;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-transform: capitalize;
+  background-color: #40ba37;
+}
+.Selfdelicious-btn:hover {
+  background-color: darkgreen;
+}
+
+.delicious-btn:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+.step-description {
+  font-size: 20px;
+  margin-top: 0;
+}
+.single-preparation-step:hover {
+  padding: 10px;
+  transition: 0.8s;
+  border: 2px solid #40ba37;
+}
+.custom-control-label:hover {
+  padding: 10px;
+  transition: 0.4s;
+  color: #40ba37;
+  font-size: 20px;
+}
+.receipe-content-area {
+  width: 90%;
+  margin:auto;
+}
+
+.images {
+  margin: 10px;
+  margin-top: 0;
+  width: "250";
+  height: "auto";
+}
